@@ -3,6 +3,7 @@ use std::{
     num::ParseIntError,
 };
 
+use once_cell::sync::Lazy;
 use regex::Regex;
 
 mod nom_parse;
@@ -14,12 +15,12 @@ pub struct StraceEvent<'a> {
     result: &'a str,
 }
 
-fn parse_into_event<'a>(
-    re: &Regex,
-    _args_re: &Regex,
-    input: &'a str,
-) -> Result<StraceEvent<'a>, ()> {
-    let data = re.captures(input).ok_or(())?;
+fn parse_into_event<'a>(input: &'a str) -> Result<StraceEvent<'a>, ()> {
+    static RE: Lazy<Regex> = Lazy::new(|| Regex::new(r#"(\w+)\((.*)\)\s+= (.+)"#).unwrap());
+    //static ARGS_RE: Lazy<Regex> = Lazy::new(|| Regex::new(r#"(.*),?(.+)?"#).unwrap());
+
+    let data = RE.captures(input).ok_or(())?;
+
 
     //let args_list = args_re.captures(data.get(2).unwrap().as_str()).ok_or(())?;
     //let mut args = vec![];
@@ -70,9 +71,14 @@ pub enum ProcessError {
     #[error("Not enough args. Needed {0}, got {1}")]
     TooShort(usize, usize),
     #[error("Tried to modify an fd we weren't holding, {0}")]
-    CloseFD(usize),
+    UseEmptyFD(usize),
     #[error("Overwrote an FD slot, {0}")]
     OverwriteFD(usize),
+}
+
+enum EventType {
+    Read,
+    Write,
 }
 
 impl ProcessError {
@@ -98,6 +104,7 @@ impl<'a> Eventer<'a> {
             ]
             .into_iter()
             .collect(),
+            seen_files: Default::default(),
         }
     }
 
@@ -107,17 +114,30 @@ impl<'a> Eventer<'a> {
         match ev.syscall {
             "openat" => {
                 ProcessError::check_len(3, &ev.args)?;
-                let _relflag = ev.args[0];
+                let relflag = ev.args[0];
                 let file = ev.args[1];
                 let flags = ev.args[2];
 
+                if relflag != "AT_FDCWD" {
+                    panic!("openat unseen relflag");
+                }
+
                 let fd = ev.result;
 
-                if !fd.starts_with("-1") {
+                if !fd.starts_with("-") {
                     self.new_fd(fd.parse()?, FileInfo::new(file, flags))?
                 }
             }
-            "open" => {}
+            "open" => {
+                ProcessError::check_len(3, &ev.args)?;
+                let file = ev.args[0];
+                let flags = ev.args[1];
+                let fd = ev.result;
+
+                if !fd.starts_with("-") {
+                    self.new_fd(fd.parse()?, FileInfo::new(file, flags))?
+                }
+            }
             "close" => {
                 ProcessError::check_len(1, &ev.args)?;
                 let fd = ev.args[0].parse()?;
@@ -126,6 +146,24 @@ impl<'a> Eventer<'a> {
                     self.close_fd(fd)?;
                 }
             }
+            "read" => {
+                ProcessError::check_len(1, &ev.args)?;
+                let fd = ev.args[0].parse()?;
+                self.fd_event(fd, EventType::Read)?;
+            }
+            "write" => {
+                ProcessError::check_len(1, &ev.args)?;
+                let fd = ev.args[0].parse()?;
+                self.fd_event(fd, EventType::Write)?;
+            }
+            //TODOs
+            "readlink" => {} //read
+            "lstat" => {}    //read
+            "statx" => {}    //read
+            "linkat" => {}   //modify
+            "unlink" => {}   //modify
+            "pipe" => {}     //make fake FDs
+            "pipe2" => {}    //make fake FDs
             _ => {}
         };
 
@@ -133,7 +171,8 @@ impl<'a> Eventer<'a> {
     }
 
     fn new_fd(&mut self, id: usize, name: FileInfo<'a>) -> Result<(), ProcessError> {
-        println!("Opening new fd {}: {:?}", id, name);
+        //println!("Opening new fd {}: {:?}", id, name);
+        println!("OPEN    {}", name.name);
         match self.open_fds.insert(id, name) {
             Some(_) => Err(ProcessError::OverwriteFD(id)),
             None => Ok(()),
@@ -143,11 +182,32 @@ impl<'a> Eventer<'a> {
     fn close_fd(&mut self, id: usize) -> Result<(), ProcessError> {
         match self.open_fds.remove(&id) {
             Some(file) => {
-                println!("Closing fd {}: {}", id, file.name);
+                //println!("Closing fd {}: {}", id, file.name);
+                println!("CLOSE   {}", file.name);
                 Ok(())
             }
-            None => Err(ProcessError::CloseFD(id)),
+            None => Err(ProcessError::UseEmptyFD(id)),
         }
+    }
+
+    fn fd_event(&self, fd: usize, etype: EventType) -> Result<(), ProcessError> {
+        let info = match self.open_fds.get(&fd) {
+            Some(info) => info,
+            None => return Err(ProcessError::UseEmptyFD(fd)),
+        };
+
+        match etype {
+            EventType::Read => {
+                //println!("Reading from {:?}", &info);
+                println!("READ    {}", info.name);
+            }
+            EventType::Write => {
+                println!("WRITE   {}", info.name);
+                //println!("Writing to {:?}", &info);
+            }
+        };
+
+        Ok(())
     }
 }
 
@@ -159,8 +219,6 @@ fn main() {
     let file = args.nth(1).unwrap();
 
     let file = std::fs::read_to_string(file).expect("couldn't open strace file");
-    let re = Regex::new(r#"(\w+)\((.*)\)\s+= (.+)"#).unwrap();
-    let args_re = Regex::new(r#"(.*),?(.+)?"#).unwrap();
 
     let mut eventer = Eventer::new();
 
@@ -176,7 +234,7 @@ fn main() {
         }
 
         //let e = nom_parse::parse_into_event(line);
-        let e = parse_into_event(&re, &args_re, line).unwrap();
+        let e = parse_into_event(line).unwrap();
 
         match eventer.process(e) {
             Ok(_) => {}
