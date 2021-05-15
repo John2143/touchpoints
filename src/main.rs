@@ -43,23 +43,34 @@ fn parse_into_event<'a>(input: &'a str) -> Result<StraceEvent<'a>, ()> {
 #[derive(Debug)]
 struct Eventer<'a> {
     syscalls: HashSet<&'a str>,
-    open_fds: HashMap<usize, FileInfo<'a>>,
+    open_fds: HashMap<usize, FDInfo<'a>>,
     seen_files: HashSet<&'a str>,
 }
 
 #[derive(Debug)]
-struct FileInfo<'a> {
-    name: &'a str,
-    flags: &'a str,
+enum FDInfo<'a> {
+    File { name: &'a str, flags: &'a str },
+    Pipe { flags: &'a str },
+    Socket,
+    Other,
 }
 
-impl<'a> FileInfo<'a> {
-    const STDIN: Self = Self::new("(stdin)", "O_RDONLY");
-    const STDOUT: Self = Self::new("(stdout)", "O_RDWR");
-    const STDERR: Self = Self::new("(stderr)", "O_RDWR");
+impl<'a> FDInfo<'a> {
+    const STDIN: Self = Self::new_file("(stdin)", "O_RDONLY");
+    const STDOUT: Self = Self::new_file("(stdout)", "O_RDWR");
+    const STDERR: Self = Self::new_file("(stderr)", "O_RDWR");
 
-    const fn new(name: &'a str, flags: &'a str) -> Self {
-        FileInfo { name, flags }
+    const fn new_file(name: &'a str, flags: &'a str) -> Self {
+        FDInfo::File { name, flags }
+    }
+
+    fn name(&self) -> &'a str {
+        match self {
+            Self::File { name, .. } => name,
+            Self::Pipe { .. } => "(pipe)",
+            Self::Socket => "(socket)",
+            Self::Other => "(unknown)",
+        }
     }
 }
 
@@ -97,13 +108,9 @@ impl<'a> Eventer<'a> {
     fn new() -> Self {
         Self {
             syscalls: Default::default(),
-            open_fds: vec![
-                (0, FileInfo::STDIN),
-                (1, FileInfo::STDOUT),
-                (2, FileInfo::STDERR),
-            ]
-            .into_iter()
-            .collect(),
+            open_fds: vec![(0, FDInfo::STDIN), (1, FDInfo::STDOUT), (2, FDInfo::STDERR)]
+                .into_iter()
+                .collect(),
             seen_files: Default::default(),
         }
     }
@@ -125,7 +132,7 @@ impl<'a> Eventer<'a> {
                 let fd = ev.result;
 
                 if !fd.starts_with("-") {
-                    self.new_fd(fd.parse()?, FileInfo::new(file, flags))?
+                    self.new_fd(fd.parse()?, FDInfo::new_file(file, flags))?
                 }
             }
             "open" => {
@@ -135,7 +142,7 @@ impl<'a> Eventer<'a> {
                 let fd = ev.result;
 
                 if !fd.starts_with("-") {
-                    self.new_fd(fd.parse()?, FileInfo::new(file, flags))?
+                    self.new_fd(fd.parse()?, FDInfo::new_file(file, flags))?
                 }
             }
             "close" => {
@@ -162,18 +169,28 @@ impl<'a> Eventer<'a> {
             "statx" => {}    //read
             "linkat" => {}   //modify
             "unlink" => {}   //modify
-            "pipe" => {}     //make fake FDs
-            "pipe2" => {}    //make fake FDs
+            "pipe" | "pipe2" => {
+                ProcessError::check_len(3, &ev.args)?;
+                let read_end: usize = ev.args[0][1..].parse()?;
+                let write_end: usize = ev.args[1][..1].parse()?;
+                self.new_fd(read_end, FDInfo::Pipe { flags: "O_RDONLY" })?;
+                self.new_fd(write_end, FDInfo::Pipe { flags: "O_WRONLY" })?;
+            }
+            "socket" => {
+                ProcessError::check_len(3, &ev.args)?;
+                let fd = ev.result.parse()?;
+                self.new_fd(fd, FDInfo::Socket)?;
+            }
             _ => {}
         };
 
         Ok(())
     }
 
-    fn new_fd(&mut self, id: usize, name: FileInfo<'a>) -> Result<(), ProcessError> {
+    fn new_fd(&mut self, id: usize, info: FDInfo<'a>) -> Result<(), ProcessError> {
         //println!("Opening new fd {}: {:?}", id, name);
-        println!("OPEN    {}", name.name);
-        match self.open_fds.insert(id, name) {
+        println!("OPEN    {}", info.name());
+        match self.open_fds.insert(id, info) {
             Some(_) => Err(ProcessError::OverwriteFD(id)),
             None => Ok(()),
         }
@@ -183,7 +200,7 @@ impl<'a> Eventer<'a> {
         match self.open_fds.remove(&id) {
             Some(file) => {
                 //println!("Closing fd {}: {}", id, file.name);
-                println!("CLOSE   {}", file.name);
+                println!("CLOSE   {}", file.name());
                 Ok(())
             }
             None => Err(ProcessError::UseEmptyFD(id)),
@@ -199,10 +216,10 @@ impl<'a> Eventer<'a> {
         match etype {
             EventType::Read => {
                 //println!("Reading from {:?}", &info);
-                println!("READ    {}", info.name);
+                println!("READ    {}", info.name());
             }
             EventType::Write => {
-                println!("WRITE   {}", info.name);
+                println!("WRITE   {}", info.name());
                 //println!("Writing to {:?}", &info);
             }
         };
@@ -239,10 +256,12 @@ fn main() {
         match eventer.process(e) {
             Ok(_) => {}
             Err(err) => {
-                println!("got eventer error on line {}: {}", lnnum, err);
+                println!("got eventer error on line {}: {}", lnnum + 1, err);
             }
         }
     }
+
+    dbg!(&eventer.syscalls);
 }
 
 // strace -f -e trace=!write cargo build
