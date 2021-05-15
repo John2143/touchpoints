@@ -1,0 +1,17 @@
+set_robust_list(0x7fa8fb9ff9e0, 24)     = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa906a02000
+mprotect(0x7fa906a02000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7fa906a03000, ss_flags=0, ss_size=8192}, NULL) = 0
+prctl(PR_SET_NAME, "copy 3bn9p2k6l1"...) = 0
+madvise(0x7fa9079ab000, 32768, MADV_DONTNEED) = 0
+sched_getaffinity(24016, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+unlink("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3bn9p2k6l1xt4inu.rcgu.o") = -1 ENOENT (No such file or directory)
+linkat(AT_FDCWD, "/home/john/touchpoints/target/debug/incremental/touchpoints-1h4hdigw85307/s-fymaaja9dd-pfa91b-working/3bn9p2k6l1xt4inu.o", AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3bn9p2k6l1xt4inu.rcgu.o", 0) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7fa906a02000, 12288)           = 0
+madvise(0x7fa8fba1c000, 4096, MADV_DONTNEED) = 0
+madvise(0x7fa8fba0d000, 57344, MADV_DONTNEED) = 0
+madvise(0x7fa8fb7ff000, 2072576, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

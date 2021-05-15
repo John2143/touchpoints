@@ -42,7 +42,8 @@ fn parse_into_event<'a>(
 #[derive(Debug)]
 struct Eventer<'a> {
     syscalls: HashSet<&'a str>,
-    openfds: HashMap<usize, FileInfo<'a>>,
+    open_fds: HashMap<usize, FileInfo<'a>>,
+    seen_files: HashSet<&'a str>,
 }
 
 #[derive(Debug)]
@@ -68,13 +69,29 @@ pub enum ProcessError {
     BadResult(#[from] ParseIntError),
     #[error("Not enough args. Needed {0}, got {1}")]
     TooShort(usize, usize),
+    #[error("Tried to modify an fd we weren't holding, {0}")]
+    CloseFD(usize),
+    #[error("Overwrote an FD slot, {0}")]
+    OverwriteFD(usize),
+}
+
+impl ProcessError {
+    fn check_len<T>(req: usize, args: &[T]) -> Result<(), ProcessError> {
+        let len = args.len();
+
+        if len < req {
+            Err(ProcessError::TooShort(req, len))
+        } else {
+            Ok(())
+        }
+    }
 }
 
 impl<'a> Eventer<'a> {
     fn new() -> Self {
         Self {
             syscalls: Default::default(),
-            openfds: vec![
+            open_fds: vec![
                 (0, FileInfo::STDIN),
                 (1, FileInfo::STDOUT),
                 (2, FileInfo::STDERR),
@@ -83,36 +100,65 @@ impl<'a> Eventer<'a> {
             .collect(),
         }
     }
+
     fn process(&mut self, ev: StraceEvent<'a>) -> Result<(), ProcessError> {
         self.syscalls.insert(ev.syscall);
 
         match ev.syscall {
             "openat" => {
-                println!("{:?} {}", ev.args, ev.result);
-                if ev.args.len() < 3 {
-                    return Err(ProcessError::TooShort(3, ev.args.len())); //invalid args
-                }
+                ProcessError::check_len(3, &ev.args)?;
+                let _relflag = ev.args[0];
                 let file = ev.args[1];
                 let flags = ev.args[2];
 
-                self.new_fd(ev.result.parse()?, FileInfo::new(file, flags))
+                let fd = ev.result;
+
+                if !fd.starts_with("-1") {
+                    self.new_fd(fd.parse()?, FileInfo::new(file, flags))?
+                }
             }
             "open" => {}
-            "close" => {}
+            "close" => {
+                ProcessError::check_len(1, &ev.args)?;
+                let fd = ev.args[0].parse()?;
+                let result: i64 = ev.result.parse()?;
+                if result == 0 {
+                    self.close_fd(fd)?;
+                }
+            }
             _ => {}
-        }
+        };
 
         Ok(())
     }
 
-    fn new_fd(&mut self, id: usize, name: FileInfo<'a>) {
+    fn new_fd(&mut self, id: usize, name: FileInfo<'a>) -> Result<(), ProcessError> {
         println!("Opening new fd {}: {:?}", id, name);
-        self.openfds.insert(id, name);
+        match self.open_fds.insert(id, name) {
+            Some(_) => Err(ProcessError::OverwriteFD(id)),
+            None => Ok(()),
+        }
+    }
+
+    fn close_fd(&mut self, id: usize) -> Result<(), ProcessError> {
+        match self.open_fds.remove(&id) {
+            Some(file) => {
+                println!("Closing fd {}: {}", id, file.name);
+                Ok(())
+            }
+            None => Err(ProcessError::CloseFD(id)),
+        }
     }
 }
 
 fn main() {
-    let file = std::fs::read_to_string("./strace_all").unwrap();
+    let mut args = std::env::args();
+    if args.len() < 1 {
+        println!("Not enough args. usage `cargo run [file]`");
+    }
+    let file = args.nth(1).unwrap();
+
+    let file = std::fs::read_to_string(file).expect("couldn't open strace file");
     let re = Regex::new(r#"(\w+)\((.*)\)\s+= (.+)"#).unwrap();
     let args_re = Regex::new(r#"(.*),?(.+)?"#).unwrap();
 
@@ -132,7 +178,12 @@ fn main() {
         //let e = nom_parse::parse_into_event(line);
         let e = parse_into_event(&re, &args_re, line).unwrap();
 
-        eventer.process(e);
+        match eventer.process(e) {
+            Ok(_) => {}
+            Err(err) => {
+                println!("got eventer error on line {}: {}", lnnum, err);
+            }
+        }
     }
 }
 
@@ -140,3 +191,4 @@ fn main() {
 // strace -f -s 1 cargo build
 // strace -s 1 cargo build
 //  strace -ff -o ./strace_all cargo build && cat strace_all.* > ./strace_all && rm strace_all.*
+// rm -rf trace && mkdir trace && strace -ff -o ./trace/strace_all cargo build

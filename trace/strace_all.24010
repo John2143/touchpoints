@@ -1,0 +1,363 @@
+set_robust_list(0x7fa8fc97f9e0, 24)     = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa906a05000
+mprotect(0x7fa906a05000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7fa906a06000, ss_flags=0, ss_size=8192}, NULL) = 0
+madvise(0x7fa90799b000, 32768, MADV_DONTNEED) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fc57f000
+munmap(0x7fa8fc57f000, 2097152)         = 0
+mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fc380000
+munmap(0x7fa8fc380000, 524288)          = 0
+munmap(0x7fa8fc600000, 1568768)         = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fc200000
+sched_getaffinity(24010, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa8fbfff000
+mprotect(0x7fa8fc000000, 2097152, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24011], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24011
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24012], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24012
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa8fb7ff000
+mprotect(0x7fa8fb800000, 2097152, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24013], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24013
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa8fb5fe000
+mprotect(0x7fa8fb5ff000, 2097152, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24014], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24014
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24015], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24015
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24016], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24016
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24017], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24017
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(NULL, 2101248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa8fadff000
+mprotect(0x7fa8fae00000, 2097152, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fa8faffd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24018], tls=0x7fa8fafff700, child_tidptr=0x7fa8fafff9d0) = 24018
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24019], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24019
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24020], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24020
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8faffd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24021], tls=0x7fa8fafff700, child_tidptr=0x7fa8fafff9d0) = 24021
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24022], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24022
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24023], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24023
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8faffd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24024], tls=0x7fa8fafff700, child_tidptr=0x7fa8fafff9d0) = 24024
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24025], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24025
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24026], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24026
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8faffd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24027], tls=0x7fa8fafff700, child_tidptr=0x7fa8fafff9d0) = 24027
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 0
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24028], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24028
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 0
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24029], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24029
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24030], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24030
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24031], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24031
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24032], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24032
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24033], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24033
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24034], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24034
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24035], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24035
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24036], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24036
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24037], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24037
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24038], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24038
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24039], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24039
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24040], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24040
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24041], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24041
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24042], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24042
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24043], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24043
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24044], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24044
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24045], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24045
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24046], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24046
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24047], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24047
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24048], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24048
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24049], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24049
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24050], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24050
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24051], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24051
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24052], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24052
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24053], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24053
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24054], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24054
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24055], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24055
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24056], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24056
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24057], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24057
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24058], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24058
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24059], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24059
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24060], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24060
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24061], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24061
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24062], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24062
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24063], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24063
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24064], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24064
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24065], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24065
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24066], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24066
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24067], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24067
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24068], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24068
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24069], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24069
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24070], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24070
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24071], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24071
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24072], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24072
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24073], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24073
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24105], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24105
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24106], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24106
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24107], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24107
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24108], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24108
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fc1fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24109], tls=0x7fa8fc1ff700, child_tidptr=0x7fa8fc1ff9d0) = 24109
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb9fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24110], tls=0x7fa8fb9ff700, child_tidptr=0x7fa8fb9ff9d0) = 24110
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc762c, FUTEX_WAKE_PRIVATE, 1) = 1
+clone(child_stack=0x7fa8fb7fc1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24111], tls=0x7fa8fb7fe700, child_tidptr=0x7fa8fb7fe9d0) = 24111
+futex(0x7fa9078d7b88, FUTEX_WAKE_PRIVATE, 1) = 1
+write(7, "|", 1)                        = 1
+write(7, "|", 1)                        = 1
+futex(0x7fa8fcdc7fb8, FUTEX_WAIT_PRIVATE, 4294967295, NULL) = 0
+futex(0x7fa8fcdc7628, FUTEX_WAKE_PRIVATE, 1) = 1
+getpid()                                = 24006
+tgkill(24006, 24009, SIGUSR1)           = 0
+futex(0x7fa8fcdc75d0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7fa8fcdc762c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=9866200}) = 0
+futex(0x7fa8fcdc75d0, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+sched_yield()                           = 0
+futex(0x7fa9065ff9d0, FUTEX_WAIT, 24009, NULL) = 0
+futex(0x7fa8fcdc75d0, FUTEX_WAKE_PRIVATE, 1) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7fa906a05000, 12288)           = 0
+madvise(0x7fa8fc21b000, 45056, MADV_DONTNEED) = 0
+madvise(0x7fa8fc275000, 114688, MADV_DONTNEED) = 0
+madvise(0x7fa8fc200000, 90112, MADV_DONTNEED) = 0
+madvise(0x7fa8fc22c000, 270336, MADV_DONTNEED) = 0
+madvise(0x7fa8fc77f000, 2072576, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

@@ -1,0 +1,32 @@
+set_robust_list(0x7fa8fc1ff9e0, 24)     = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa906a02000
+mprotect(0x7fa906a02000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7fa906a03000, ss_flags=0, ss_size=8192}, NULL) = 0
+prctl(PR_SET_NAME, "opt 3vxza9yn20l"...) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fbdff000
+munmap(0x7fa8fbdff000, 2097152)         = 0
+mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fbc00000
+munmap(0x7fa8fbe00000, 2093056)         = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa8fba00000
+sched_getaffinity(24011, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3vxza9yn20la6gpo.rcgu.o", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 10
+lseek(10, 0, SEEK_CUR)                  = 0
+futex(0x7fa90d041748, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fa90d038be4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fa90d04d098, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fa90d045238, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+fstat(10, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+write(10, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\1\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 2288) = 2288
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+close(10)                               = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0x7fa8fcdc7fb8, FUTEX_WAKE_PRIVATE, 1) = 1
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7fa906a02000, 12288)           = 0
+madvise(0x7fa907934000, 4096, MADV_DONTNEED) = 0
+madvise(0x7fa8fba0d000, 368640, MADV_DONTNEED) = 0
+madvise(0x7fa8fba6a000, 1130496, MADV_DONTNEED) = 0
+madvise(0x7fa8fbfff000, 2072576, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

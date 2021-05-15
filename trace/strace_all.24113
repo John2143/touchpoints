@@ -1,0 +1,325 @@
+execve("/usr/lib/gcc/x86_64-linux-gnu/8/collect2", ["/usr/lib/gcc/x86_64-linux-gnu/8/"..., "-plugin", "/usr/lib/gcc/x86_64-linux-gnu/8/"..., "-plugin-opt=/usr/lib/gcc/x86_64-"..., "-plugin-opt=-fresolution=/tmp/cc"..., "--build-id", "--eh-frame-hdr", "-m", "elf_x86_64", "--hash-style=gnu", "-dynamic-linker", "/lib64/ld-linux-x86-64.so.2", "-pie", "-o", "/home/john/touchpoints/target/de"..., "/usr/lib/gcc/x86_64-linux-gnu/8/"..., "/usr/lib/gcc/x86_64-linux-gnu/8/"..., "/usr/lib/gcc/x86_64-linux-gnu/8/"..., "-L/home/john/.rustup/toolchains/"..., "-L/home/john/touchpoints/target/"..., "-L/home/john/.rustup/toolchains/"..., "-L/usr/lib/gcc/x86_64-linux-gnu/"..., "-L/usr/lib/gcc/x86_64-linux-gnu/"..., "-L/usr/lib/gcc/x86_64-linux-gnu/"..., "-L/lib/x86_64-linux-gnu", "-L/lib/../lib", "-L/usr/lib/x86_64-linux-gnu", "-L/usr/lib/../lib", "-L/usr/lib/gcc/x86_64-linux-gnu/"..., "--eh-frame-hdr", "-znoexecstack", "--as-needed", ...], 0x1d399b0 /* 53 vars */) = 0
+brk(NULL)                               = 0x7d6000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/x86_64", 0x7ffd56f835c0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=131388, ...}) = 0
+mmap(NULL, 131388, PROT_READ, MAP_PRIVATE, 6, 0) = 0x7f6c3396a000
+close(6)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\322\0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0644, st_size=1579448, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c33968000
+mmap(NULL, 1581384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f6c337e5000
+mmap(0x7f6c337f2000, 651264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xd000) = 0x7f6c337f2000
+mmap(0x7f6c33891000, 872448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xac000) = 0x7f6c33891000
+mmap(0x7f6c33966000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x180000) = 0x7f6c33966000
+close(6)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260A\2\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0755, st_size=1824496, ...}) = 0
+mmap(NULL, 1837056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f6c33624000
+mprotect(0x7f6c33646000, 1658880, PROT_NONE) = 0
+mmap(0x7f6c33646000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x22000) = 0x7f6c33646000
+mmap(0x7f6c3378e000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x16a000) = 0x7f6c3378e000
+mmap(0x7f6c337db000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x1b6000) = 0x7f6c337db000
+mmap(0x7f6c337e1000, 14336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6c337e1000
+close(6)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c33621000
+arch_prctl(ARCH_SET_FS, 0x7f6c33621740) = 0
+mprotect(0x7f6c337db000, 16384, PROT_READ) = 0
+mprotect(0x7f6c33966000, 4096, PROT_READ) = 0
+mprotect(0x48f000, 16384, PROT_READ)    = 0
+mprotect(0x7f6c339b2000, 4096, PROT_READ) = 0
+munmap(0x7f6c3396a000, 131388)          = 0
+brk(NULL)                               = 0x7d6000
+brk(0x7f7000)                           = 0x7f7000
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TCGETS, 0x7ffd56f841a0)        = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x405ac2, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x405ac2, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_IGN, sa_mask=[ALRM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x405ac2, sa_mask=[ALRM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[ALRM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x405ac2, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=SIG_IGN, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x405ac2, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=SIG_IGN, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x405ac2, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, {sa_handler=SIG_IGN, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6c3365b840}, 8) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/real-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/real-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/real-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/real-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/real-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/collect-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/collect-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/collect-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/collect-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/collect-ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/ld", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/ld", 0x7ffd56f841c0)    = -1 ENOENT (No such file or directory)
+stat("/usr/bin/ld", {st_mode=S_IFREG|0755, st_size=1738192, ...}) = 0
+access("/usr/bin/ld", X_OK)             = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/gnm", 0x7ffd56f841c0)   = -1 ENOENT (No such file or directory)
+stat("/usr/bin/gnm", 0x7ffd56f841c0)    = -1 ENOENT (No such file or directory)
+stat("/sbin/gnm", 0x7ffd56f841c0)       = -1 ENOENT (No such file or directory)
+stat("/bin/gnm", 0x7ffd56f841c0)        = -1 ENOENT (No such file or directory)
+stat("/usr/games/gnm", 0x7ffd56f841c0)  = -1 ENOENT (No such file or directory)
+stat("/usr/local/games/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Python27/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Python27/Scripts/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/Razer/ChromaBroadcast/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/RSA SecurID Token Common/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/RSA SecurID Token Common/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/system32/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/Wbem/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/WindowsPowerShell/v1.0/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/OpenSSH/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/PuTTY/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/RSA SecurID Token Common/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/dotnet/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/ProgramData/chocolatey/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Roaming/nvm/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/nodejs/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/CMake/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/system32/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/Wbem/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/OpenSSH/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/Mullvad VPN/resources/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/.cargo/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python38/Scripts/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python38/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python37/Scripts/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python37/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Roaming/npm/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Microsoft VS Code/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/FAHClient/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Keybase/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Microsoft/WindowsApps/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/.dotnet/tools/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/tools/neovim/Neovim/bin/gnm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/nm", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/nm", 0x7ffd56f841c0)    = -1 ENOENT (No such file or directory)
+stat("/usr/bin/nm", {st_mode=S_IFREG|0755, st_size=49184, ...}) = 0
+access("/usr/bin/nm", X_OK)             = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/sbin/gstrip", 0x7ffd56f841c0)    = -1 ENOENT (No such file or directory)
+stat("/bin/gstrip", 0x7ffd56f841c0)     = -1 ENOENT (No such file or directory)
+stat("/usr/games/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/games/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Python27/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Python27/Scripts/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/Razer/ChromaBroadcast/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/RSA SecurID Token Common/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/RSA SecurID Token Common/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/system32/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/Wbem/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/WindowsPowerShell/v1.0/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Windows/System32/OpenSSH/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/PuTTY/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/RSA SecurID Token Common/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/dotnet/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/ProgramData/chocolatey/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Roaming/nvm/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/nodejs/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/CMake/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/system32/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/Wbem/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/WINDOWS/System32/OpenSSH/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files/Mullvad VPN/resources/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/.cargo/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python38/Scripts/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python38/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python37/Scripts/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Python/Python37/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Roaming/npm/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Programs/Microsoft VS Code/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Program Files (x86)/FAHClient/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Keybase/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/AppData/Local/Microsoft/WindowsApps/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/Users/John/.dotnet/tools/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/mnt/c/tools/neovim/Neovim/bin/gstrip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/strip", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/strip", {st_mode=S_IFREG|0755, st_size=187960, ...}) = 0
+access("/usr/bin/strip", X_OK)          = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/.cargo/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/home/john/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/cc", 0x7ffd56f841c0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/cc", 0x7ffd56f841c0)    = -1 ENOENT (No such file or directory)
+stat("/usr/bin/cc", {st_mode=S_IFREG|0755, st_size=1100664, ...}) = 0
+access("/usr/bin/cc", X_OK)             = 0
+access("/tmp", R_OK|W_OK|X_OK)          = 0
+getpid()                                = 24113
+openat(AT_FDCWD, "/tmp/ccoAMQiQ.c", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+close(6)                                = 0
+getpid()                                = 24113
+openat(AT_FDCWD, "/tmp/ccUdyDlt.o", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+close(6)                                = 0
+getpid()                                = 24113
+openat(AT_FDCWD, "/tmp/ccKUvvo6.ld", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+close(6)                                = 0
+getpid()                                = 24113
+openat(AT_FDCWD, "/tmp/ccgDlvrJ.le", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+close(6)                                = 0
+openat(AT_FDCWD, "/tmp/ccKUvvo6.ld", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 6
+openat(AT_FDCWD, "/tmp/ccgDlvrJ.le", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 7
+vfork()                                 = 24114
+close(6)                                = 0
+close(7)                                = 0
+wait4(24114, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 24114
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=24114, si_uid=1000, si_status=0, si_utime=59, si_stime=399} ---
+stat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/tmp/ccKUvvo6.ld", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+unlink("/tmp/ccKUvvo6.ld")              = 0
+openat(AT_FDCWD, "/tmp/ccgDlvrJ.le", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+unlink("/tmp/ccgDlvrJ.le")              = 0
+lstat("/tmp/ccoAMQiQ.c", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+unlink("/tmp/ccoAMQiQ.c")               = 0
+lstat("/tmp/ccUdyDlt.o", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+unlink("/tmp/ccUdyDlt.o")               = 0
+lstat("/tmp/ccoAMQiQ.c", 0x7ffd56f84240) = -1 ENOENT (No such file or directory)
+lstat("/tmp/ccUdyDlt.o", 0x7ffd56f84240) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/tmp/ccKUvvo6.ld", O_RDONLY) = -1 ENOENT (No such file or directory)
+lstat("/tmp/ccKUvvo6.ld", 0x7ffd56f84240) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/tmp/ccgDlvrJ.le", O_RDONLY) = -1 ENOENT (No such file or directory)
+lstat("/tmp/ccgDlvrJ.le", 0x7ffd56f84260) = -1 ENOENT (No such file or directory)
+exit_group(0)                           = ?
++++ exited with 0 +++

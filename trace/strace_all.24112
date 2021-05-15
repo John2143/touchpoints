@@ -1,0 +1,1867 @@
+set_robust_list(0x7fa9073ff9e0, 24)     = 0
+close(12)                               = 0
+dup2(9, 1)                              = 1
+dup2(11, 2)                             = 2
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa90d0cb840}, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa90d0cb840}, 8) = 0
+execve("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/.cargo/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/.cargo/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/local/sbin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/.cargo/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/.cargo/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/home/john/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/sbin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/cc", ["cc", "-m64", "-Wl,--eh-frame-hdr", "-Wl,-znoexecstack", "-Wl,--as-needed", "-L", "/home/john/.rustup/toolchains/ni"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., "/home/john/touchpoints/target/de"..., ...], 0x7fa9009b0b80 /* 46 vars */) = 0
+brk(NULL)                               = 0x1d02000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/x86_64", 0x7ffc460f6390) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=131388, ...}) = 0
+mmap(NULL, 131388, PROT_READ, MAP_PRIVATE, 6, 0) = 0x7f9e925a8000
+close(6)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\322\0\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0644, st_size=1579448, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9e925a6000
+mmap(NULL, 1581384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f9e92423000
+mmap(0x7f9e92430000, 651264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xd000) = 0x7f9e92430000
+mmap(0x7f9e924cf000, 872448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xac000) = 0x7f9e924cf000
+mmap(0x7f9e925a4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x180000) = 0x7f9e925a4000
+close(6)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260A\2\0\0\0\0\0"..., 832) = 832
+fstat(6, {st_mode=S_IFREG|0755, st_size=1824496, ...}) = 0
+mmap(NULL, 1837056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f9e92262000
+mprotect(0x7f9e92284000, 1658880, PROT_NONE) = 0
+mmap(0x7f9e92284000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x22000) = 0x7f9e92284000
+mmap(0x7f9e923cc000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x16a000) = 0x7f9e923cc000
+mmap(0x7f9e92419000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x1b6000) = 0x7f9e92419000
+mmap(0x7f9e9241f000, 14336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9e9241f000
+close(6)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9e9225f000
+arch_prctl(ARCH_SET_FS, 0x7f9e9225f740) = 0
+mprotect(0x7f9e92419000, 16384, PROT_READ) = 0
+mprotect(0x7f9e925a4000, 4096, PROT_READ) = 0
+mprotect(0x509000, 12288, PROT_READ)    = 0
+mprotect(0x7f9e925f0000, 4096, PROT_READ) = 0
+munmap(0x7f9e925a8000, 131388)          = 0
+brk(NULL)                               = 0x1d02000
+brk(0x1d23000)                          = 0x1d23000
+brk(0x1d47000)                          = 0x1d47000
+ioctl(2, TCGETS, 0x7ffc460f6f40)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc460f6f60)        = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x40ac61, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x40ac61, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x40ac61, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x40ac61, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f9e92299840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/cc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/sbin/cc", X_OK)            = -1 ENOENT (No such file or directory)
+access("/usr/bin/cc", X_OK)             = 0
+stat("/usr/bin/cc", {st_mode=S_IFREG|0755, st_size=1100664, ...}) = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+lstat("/usr/bin/cc", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/bin/cc", "/etc/alternatives/cc", 4095) = 20
+lstat("/etc", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+lstat("/etc/alternatives", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+lstat("/etc/alternatives/cc", {st_mode=S_IFLNK|0777, st_size=12, ...}) = 0
+readlink("/etc/alternatives/cc", "/usr/bin/gcc", 4095) = 12
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-8", 4095) = 5
+lstat("/usr/bin/gcc-8", {st_mode=S_IFLNK|0777, st_size=22, ...}) = 0
+readlink("/usr/bin/gcc-8", "x86_64-linux-gnu-gcc-8", 4095) = 22
+lstat("/usr/bin/x86_64-linux-gnu-gcc-8", {st_mode=S_IFREG|0755, st_size=1100664, ...}) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/cc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/home/john/.cargo/bin/cc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/john/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/cc", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/sbin/cc", X_OK)            = -1 ENOENT (No such file or directory)
+access("/usr/bin/cc", X_OK)             = 0
+stat("/usr/bin/cc", {st_mode=S_IFREG|0755, st_size=1100664, ...}) = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+lstat("/usr/bin/cc", {st_mode=S_IFLNK|0777, st_size=20, ...}) = 0
+readlink("/usr/bin/cc", "/etc/alternatives/cc", 4095) = 20
+lstat("/etc", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+lstat("/etc/alternatives", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+lstat("/etc/alternatives/cc", {st_mode=S_IFLNK|0777, st_size=12, ...}) = 0
+readlink("/etc/alternatives/cc", "/usr/bin/gcc", 4095) = 12
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-8", 4095) = 5
+lstat("/usr/bin/gcc-8", {st_mode=S_IFLNK|0777, st_size=22, ...}) = 0
+readlink("/usr/bin/gcc-8", "x86_64-linux-gnu-gcc-8", 4095) = 22
+lstat("/usr/bin/x86_64-linux-gnu-gcc-8", {st_mode=S_IFREG|0755, st_size=1100664, ...}) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.109ydebrk50d4asd.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.13tssbu3vw7ddel9.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.141x1rvttp5u4gev.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.14ouyp9bbjtg6gx1.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.16vp8xpixqq5z8d8.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.18g4axe1xd05yop.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1c6zifeeyeu6u6l1.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1crzuesej5sx7sab.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1g0kn58lyj87cymv.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jrg3q48h2ji8fwc.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jyu9ebdda2jhv6d.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jzot3re9xjsnc9n.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1l6fj5j9qphfqii8.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1ouv1gqeme1hbs14.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.215mrrr3cc4pbm38.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.22lyuzs3ytlh7ubt.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.24g4ufmerrr8khab.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.25ajasr0tmqkaxzn.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.28hiah6aeqea4rqz.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.28mj2acp5s08gl69.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2gx7s8u46jv36f6t.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2mhkqzd89xj1wbm7.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2q1p49uj88k663nj.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2s78we7v7upu45v2.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2snzxh2jd8unmuzr.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2t7nx3g8ckrqu3cj.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2vj6x0k8as647jgd.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2wh2z6xnoc800u44.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2xs5bz77kzg44ygi.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.315dqxmmmt3da18g.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.31c2ez0prmu7n3im.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.32vm65ywjxeto7w.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.33o42flo582oid6w.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.34hqeusru2ewnchy.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.35d656813o4nkutx.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.38lqlvvcjjyg5xd7.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3bn9p2k6l1xt4inu.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3cljvzlaejjpnx15.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3e0dw2wv5su3l4p1.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3fllunsaeakca9yr.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3hxke19fv1xc56yi.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3jbzoqwlbynzqtjv.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3kast8lrpclxmo21.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3kgo04hj26gnunq8.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3nwo6a1jx8r77ggn.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3oo2hs7boohpxtyb.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3pnew4a4vjf7plqi.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3qqiz410odcf8mkc.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.47dcvzpdlfyqt6we.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.47xecc9y9d58k8ka.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4a1h9t51dvy4ivr3.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4cbr08wygoyj8a7o.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4sn9azd78pa99tqt.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4spt5ohu5x85zbov.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4yinbf1cm925jjdd.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.50o8w9g85vm7liku.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.53blhl6xoi7fix.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.56g3s5g37hj0j1q6.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5980kd2awlk6biex.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.59kpeql9wib9tsn2.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5djq7lwwrwex9dtm.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5fjj7q92gp38l5ij.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5g4773y10rn7ard4.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5gi13klirwz0hfc7.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.9x2mxxbb3bbjr0.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.gi8o1ee8bwyu4ef.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.hpw04rjv5exr2ux.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.ke5d605nlvgszqs.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.y9bx97swzcdobfw.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3vxza9yn20la6gpo.rcgu.o", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libthiserror-5d0fd23856d57062.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libnom-1db46996668bf13d.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/liblexical_core-a6e06482c6ec9709.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libbitflags-7f78c1de5599d643.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libryu-8dbd57cf09aa6df6.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libstatic_assertions-73281cceb3ca5dce.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libarrayvec-1093507849163cc2.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libcfg_if-755744d3ca57570c.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libbitvec-3ea0de948ab3569f.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libfunty-e92a7ca8a32e54f5.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libwyz-9635ae37bf1e45fa.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libtap-72b14fa1b926c591.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libradium-0df20ac3b79dd3c1.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libregex-77655542b95b7667.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libaho_corasick-63511958749dcb8c.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libmemchr-d849963a99f05d1a.rlib", F_OK) = 0
+access("/home/john/touchpoints/target/debug/deps/libregex_syntax-7f67f9c47fcbf828.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-c6dddd3d354e6bea.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-c2ca47afdcc5e309.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-b47be2942017e108.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-20a1e49116ab0df9.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-25e09d9868291683.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-9c99fb6e5ca5159e.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-85040d7563599960.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd_detect-0e4f7587da8acf20.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-7be0a6711ed15b5c.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-00672fabc4ff9c9d.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-72fe231ef0473d15.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-019d54ecc304b655.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-cc7d9343e4f608be.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-e41c6d24baeb2249.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-9849bb0fbad7f0f5.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-a1fd7734706d5518.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-c8ded1707ad10767.rlib", F_OK) = 0
+access("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-8b33f9cbbc9652fe.rlib", F_OK) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.109ydebrk50d4asd.rcgu.o", {st_mode=S_IFREG|0644, st_size=6024, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.13tssbu3vw7ddel9.rcgu.o", {st_mode=S_IFREG|0644, st_size=13608, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.141x1rvttp5u4gev.rcgu.o", {st_mode=S_IFREG|0644, st_size=10640, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.14ouyp9bbjtg6gx1.rcgu.o", {st_mode=S_IFREG|0644, st_size=14768, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.16vp8xpixqq5z8d8.rcgu.o", {st_mode=S_IFREG|0644, st_size=4776, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.18g4axe1xd05yop.rcgu.o", {st_mode=S_IFREG|0644, st_size=29576, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1c6zifeeyeu6u6l1.rcgu.o", {st_mode=S_IFREG|0644, st_size=5528, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1crzuesej5sx7sab.rcgu.o", {st_mode=S_IFREG|0644, st_size=133088, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1g0kn58lyj87cymv.rcgu.o", {st_mode=S_IFREG|0644, st_size=3048, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jrg3q48h2ji8fwc.rcgu.o", {st_mode=S_IFREG|0644, st_size=8440, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jyu9ebdda2jhv6d.rcgu.o", {st_mode=S_IFREG|0644, st_size=4264, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1jzot3re9xjsnc9n.rcgu.o", {st_mode=S_IFREG|0644, st_size=6144, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1l6fj5j9qphfqii8.rcgu.o", {st_mode=S_IFREG|0644, st_size=4416, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.1ouv1gqeme1hbs14.rcgu.o", {st_mode=S_IFREG|0644, st_size=4504, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.215mrrr3cc4pbm38.rcgu.o", {st_mode=S_IFREG|0644, st_size=3976, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.22lyuzs3ytlh7ubt.rcgu.o", {st_mode=S_IFREG|0644, st_size=5680, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.24g4ufmerrr8khab.rcgu.o", {st_mode=S_IFREG|0644, st_size=10496, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.25ajasr0tmqkaxzn.rcgu.o", {st_mode=S_IFREG|0644, st_size=4256, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.28hiah6aeqea4rqz.rcgu.o", {st_mode=S_IFREG|0644, st_size=4832, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.28mj2acp5s08gl69.rcgu.o", {st_mode=S_IFREG|0644, st_size=15376, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2gx7s8u46jv36f6t.rcgu.o", {st_mode=S_IFREG|0644, st_size=9512, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2mhkqzd89xj1wbm7.rcgu.o", {st_mode=S_IFREG|0644, st_size=12864, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2q1p49uj88k663nj.rcgu.o", {st_mode=S_IFREG|0644, st_size=15224, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2s78we7v7upu45v2.rcgu.o", {st_mode=S_IFREG|0644, st_size=12560, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2snzxh2jd8unmuzr.rcgu.o", {st_mode=S_IFREG|0644, st_size=4240, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2t7nx3g8ckrqu3cj.rcgu.o", {st_mode=S_IFREG|0644, st_size=4616, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2vj6x0k8as647jgd.rcgu.o", {st_mode=S_IFREG|0644, st_size=3696, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2wh2z6xnoc800u44.rcgu.o", {st_mode=S_IFREG|0644, st_size=3512, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.2xs5bz77kzg44ygi.rcgu.o", {st_mode=S_IFREG|0644, st_size=5192, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.315dqxmmmt3da18g.rcgu.o", {st_mode=S_IFREG|0644, st_size=9352, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.31c2ez0prmu7n3im.rcgu.o", {st_mode=S_IFREG|0644, st_size=24152, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.32vm65ywjxeto7w.rcgu.o", {st_mode=S_IFREG|0644, st_size=6792, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.33o42flo582oid6w.rcgu.o", {st_mode=S_IFREG|0644, st_size=9016, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.34hqeusru2ewnchy.rcgu.o", {st_mode=S_IFREG|0644, st_size=17080, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.35d656813o4nkutx.rcgu.o", {st_mode=S_IFREG|0644, st_size=8120, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.38lqlvvcjjyg5xd7.rcgu.o", {st_mode=S_IFREG|0644, st_size=37304, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3bn9p2k6l1xt4inu.rcgu.o", {st_mode=S_IFREG|0644, st_size=49304, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3cljvzlaejjpnx15.rcgu.o", {st_mode=S_IFREG|0644, st_size=5728, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3e0dw2wv5su3l4p1.rcgu.o", {st_mode=S_IFREG|0644, st_size=4984, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3fllunsaeakca9yr.rcgu.o", {st_mode=S_IFREG|0644, st_size=22496, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3hxke19fv1xc56yi.rcgu.o", {st_mode=S_IFREG|0644, st_size=90360, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3jbzoqwlbynzqtjv.rcgu.o", {st_mode=S_IFREG|0644, st_size=142224, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3kast8lrpclxmo21.rcgu.o", {st_mode=S_IFREG|0644, st_size=117336, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3kgo04hj26gnunq8.rcgu.o", {st_mode=S_IFREG|0644, st_size=24800, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3nwo6a1jx8r77ggn.rcgu.o", {st_mode=S_IFREG|0644, st_size=6568, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3oo2hs7boohpxtyb.rcgu.o", {st_mode=S_IFREG|0644, st_size=8704, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3pnew4a4vjf7plqi.rcgu.o", {st_mode=S_IFREG|0644, st_size=5440, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3qqiz410odcf8mkc.rcgu.o", {st_mode=S_IFREG|0644, st_size=15640, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.47dcvzpdlfyqt6we.rcgu.o", {st_mode=S_IFREG|0644, st_size=13824, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.47xecc9y9d58k8ka.rcgu.o", {st_mode=S_IFREG|0644, st_size=9440, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4a1h9t51dvy4ivr3.rcgu.o", {st_mode=S_IFREG|0644, st_size=16248, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4cbr08wygoyj8a7o.rcgu.o", {st_mode=S_IFREG|0644, st_size=8600, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4sn9azd78pa99tqt.rcgu.o", {st_mode=S_IFREG|0644, st_size=4432, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4spt5ohu5x85zbov.rcgu.o", {st_mode=S_IFREG|0644, st_size=4864, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.4yinbf1cm925jjdd.rcgu.o", {st_mode=S_IFREG|0644, st_size=6560, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.50o8w9g85vm7liku.rcgu.o", {st_mode=S_IFREG|0644, st_size=8968, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.53blhl6xoi7fix.rcgu.o", {st_mode=S_IFREG|0644, st_size=4656, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.56g3s5g37hj0j1q6.rcgu.o", {st_mode=S_IFREG|0644, st_size=8504, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5980kd2awlk6biex.rcgu.o", {st_mode=S_IFREG|0644, st_size=10224, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.59kpeql9wib9tsn2.rcgu.o", {st_mode=S_IFREG|0644, st_size=3840, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5djq7lwwrwex9dtm.rcgu.o", {st_mode=S_IFREG|0644, st_size=10616, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5fjj7q92gp38l5ij.rcgu.o", {st_mode=S_IFREG|0644, st_size=45568, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5g4773y10rn7ard4.rcgu.o", {st_mode=S_IFREG|0644, st_size=10576, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.5gi13klirwz0hfc7.rcgu.o", {st_mode=S_IFREG|0644, st_size=5312, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.9x2mxxbb3bbjr0.rcgu.o", {st_mode=S_IFREG|0644, st_size=8560, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.gi8o1ee8bwyu4ef.rcgu.o", {st_mode=S_IFREG|0644, st_size=16640, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.hpw04rjv5exr2ux.rcgu.o", {st_mode=S_IFREG|0644, st_size=4648, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.ke5d605nlvgszqs.rcgu.o", {st_mode=S_IFREG|0644, st_size=5680, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.y9bx97swzcdobfw.rcgu.o", {st_mode=S_IFREG|0644, st_size=3688, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.3vxza9yn20la6gpo.rcgu.o", {st_mode=S_IFREG|0644, st_size=2288, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libthiserror-5d0fd23856d57062.rlib", {st_mode=S_IFREG|0644, st_size=82552, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libnom-1db46996668bf13d.rlib", {st_mode=S_IFREG|0644, st_size=4718010, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/liblexical_core-a6e06482c6ec9709.rlib", {st_mode=S_IFREG|0644, st_size=2834976, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libbitflags-7f78c1de5599d643.rlib", {st_mode=S_IFREG|0644, st_size=48794, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libryu-8dbd57cf09aa6df6.rlib", {st_mode=S_IFREG|0644, st_size=392110, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libstatic_assertions-73281cceb3ca5dce.rlib", {st_mode=S_IFREG|0644, st_size=56312, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libarrayvec-1093507849163cc2.rlib", {st_mode=S_IFREG|0644, st_size=526166, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libcfg_if-755744d3ca57570c.rlib", {st_mode=S_IFREG|0644, st_size=6884, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libbitvec-3ea0de948ab3569f.rlib", {st_mode=S_IFREG|0644, st_size=2693668, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libfunty-e92a7ca8a32e54f5.rlib", {st_mode=S_IFREG|0644, st_size=1842260, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libwyz-9635ae37bf1e45fa.rlib", {st_mode=S_IFREG|0644, st_size=203096, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libtap-72b14fa1b926c591.rlib", {st_mode=S_IFREG|0644, st_size=90490, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libradium-0df20ac3b79dd3c1.rlib", {st_mode=S_IFREG|0644, st_size=303218, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libregex-77655542b95b7667.rlib", {st_mode=S_IFREG|0644, st_size=11680050, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libaho_corasick-63511958749dcb8c.rlib", {st_mode=S_IFREG|0644, st_size=5705156, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libmemchr-d849963a99f05d1a.rlib", {st_mode=S_IFREG|0644, st_size=2800914, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libregex_syntax-7f67f9c47fcbf828.rlib", {st_mode=S_IFREG|0644, st_size=15102514, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-c6dddd3d354e6bea.rlib", {st_mode=S_IFREG|0644, st_size=15590906, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-c2ca47afdcc5e309.rlib", {st_mode=S_IFREG|0644, st_size=87938, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-b47be2942017e108.rlib", {st_mode=S_IFREG|0644, st_size=868980, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-20a1e49116ab0df9.rlib", {st_mode=S_IFREG|0644, st_size=42496, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-25e09d9868291683.rlib", {st_mode=S_IFREG|0644, st_size=7506158, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-9c99fb6e5ca5159e.rlib", {st_mode=S_IFREG|0644, st_size=244750, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-85040d7563599960.rlib", {st_mode=S_IFREG|0644, st_size=6486978, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd_detect-0e4f7587da8acf20.rlib", {st_mode=S_IFREG|0644, st_size=405130, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-7be0a6711ed15b5c.rlib", {st_mode=S_IFREG|0644, st_size=670320, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-00672fabc4ff9c9d.rlib", {st_mode=S_IFREG|0644, st_size=1079544, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-72fe231ef0473d15.rlib", {st_mode=S_IFREG|0644, st_size=4440, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-019d54ecc304b655.rlib", {st_mode=S_IFREG|0644, st_size=43032, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-cc7d9343e4f608be.rlib", {st_mode=S_IFREG|0644, st_size=9202, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-e41c6d24baeb2249.rlib", {st_mode=S_IFREG|0644, st_size=3417902, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-9849bb0fbad7f0f5.rlib", {st_mode=S_IFREG|0644, st_size=4202482, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-a1fd7734706d5518.rlib", {st_mode=S_IFREG|0644, st_size=5912, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-c8ded1707ad10767.rlib", {st_mode=S_IFREG|0644, st_size=41293038, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-8b33f9cbbc9652fe.rlib", {st_mode=S_IFREG|0644, st_size=2904084, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", {st_mode=S_IFREG|0755, st_size=14995072, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/", X_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper", {st_mode=S_IFREG|0755, st_size=975152, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper", X_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/collect2", {st_mode=S_IFREG|0755, st_size=602328, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/collect2", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/8/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=122880, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=122880, ...}) = 0
+stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/.", 0x7ffc460f6de0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/tmp", R_OK|W_OK|X_OK)          = 0
+getpid()                                = 24112
+openat(AT_FDCWD, "/tmp/ccKlyd7N.res", O_RDWR|O_CREAT|O_EXCL, 0600) = 6
+close(6)                                = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=122880, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/x86_64-linux-gnu/8/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=122880, ...}) = 0
+stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/.", 0x7ffc460f6030) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/8/collect2", {st_mode=S_IFREG|0755, st_size=602328, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/8/collect2", X_OK) = 0
+vfork()                                 = 24113
+wait4(24113, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 24113
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=24113, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+stat("/tmp/ccKlyd7N.res", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+unlink("/tmp/ccKlyd7N.res")             = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

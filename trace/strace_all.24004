@@ -1,0 +1,53 @@
+set_robust_list(0x7faed68a19e0, 24)     = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faed6c84000
+mprotect(0x7faed6c84000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7faed6c85000, ss_flags=0, ss_size=8192}, NULL) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7faece6a1000
+munmap(0x7faece6a1000, 26603520)        = 0
+munmap(0x7faed4000000, 40505344)        = 0
+mprotect(0x7faed0000000, 135168, PROT_READ|PROT_WRITE) = 0
+sched_getaffinity(24004, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+futex(0x563d5920f060, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d5920f060, FUTEX_WAKE_PRIVATE, 1) = 0
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+read(6, "|", 1)                         = 1
+futex(0x563d5912f818, FUTEX_WAIT_PRIVATE, 0, NULL) = 0
+futex(0x563d59211cf0, FUTEX_WAKE_PRIVATE, 1) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7faed6c84000, 12288)           = 0
+madvise(0x7faed66a1000, 2076672, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

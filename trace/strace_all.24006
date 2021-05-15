@@ -1,0 +1,623 @@
+set_robust_list(0x7faed66a09e0, 24)     = 0
+close(14)                               = 0
+dup2(9, 0)                              = 0
+dup2(11, 1)                             = 1
+dup2(13, 2)                             = 2
+chdir("/home/john/touchpoints")         = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7faed6921840}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7faed6921840}, 8) = 0
+fcntl(6, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fcntl(6, F_SETFD, 0)                    = 0
+fcntl(7, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fcntl(7, F_SETFD, 0)                    = 0
+execve("/home/john/.cargo/bin/rustc", ["rustc", "--crate-name", "touchpoints", "--edition=2018", "src/main.rs", "--error-format=json", "--json=diagnostic-rendered-ansi", "--crate-type", "bin", "--emit=dep-info,link", "-C", "embed-bitcode=no", "-C", "debuginfo=2", "-C", "metadata=94e063f882d58e3e", "-C", "extra-filename=-94e063f882d58e3e", "--out-dir", "/home/john/touchpoints/target/de"..., "-C", "incremental=/home/john/touchpoin"..., "-L", "dependency=/home/john/touchpoint"..., "--extern", "nom=/home/john/touchpoints/targe"..., "--extern", "once_cell=/home/john/touchpoints"..., "--extern", "regex=/home/john/touchpoints/tar"..., "--extern", "thiserror=/home/john/touchpoints"...], 0x7faec8005980 /* 44 vars */) = 0
+brk(NULL)                               = 0x565474bf7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64", 0x7ffcf5bb1dc0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 8
+fstat(8, {st_mode=S_IFREG|0644, st_size=131388, ...}) = 0
+mmap(NULL, 131388, PROT_READ, MAP_PRIVATE, 8, 0) = 0x7f4ed8ec6000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0203\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=100736, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8ec4000
+mmap(NULL, 103496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8eaa000
+mmap(0x7f4ed8ead000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3000) = 0x7f4ed8ead000
+mmap(0x7f4ed8ebe000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x14000) = 0x7f4ed8ebe000
+mmap(0x7f4ed8ec2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x17000) = 0x7f4ed8ec2000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260#\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=35808, ...}) = 0
+mmap(NULL, 39904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8ea0000
+mmap(0x7f4ed8ea2000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7f4ed8ea2000
+mmap(0x7f4ed8ea6000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x6000) = 0x7f4ed8ea6000
+mmap(0x7f4ed8ea8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x7000) = 0x7f4ed8ea8000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@l\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0755, st_size=146968, ...}) = 0
+mmap(NULL, 132288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8e7f000
+mmap(0x7f4ed8e85000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x6000) = 0x7f4ed8e85000
+mmap(0x7f4ed8e94000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x15000) = 0x7f4ed8e94000
+mmap(0x7f4ed8e9a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1a000) = 0x7f4ed8e9a000
+mmap(0x7f4ed8e9c000, 13504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8e9c000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\322\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=1579448, ...}) = 0
+mmap(NULL, 1581384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8cfc000
+mmap(0x7f4ed8d09000, 651264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xd000) = 0x7f4ed8d09000
+mmap(0x7f4ed8da8000, 872448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xac000) = 0x7f4ed8da8000
+mmap(0x7f4ed8e7d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x180000) = 0x7f4ed8e7d000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\21\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=14592, ...}) = 0
+mmap(NULL, 16656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8cf7000
+mmap(0x7f4ed8cf8000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1000) = 0x7f4ed8cf8000
+mmap(0x7f4ed8cf9000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7f4ed8cf9000
+mmap(0x7f4ed8cfa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7f4ed8cfa000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260A\2\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0755, st_size=1824496, ...}) = 0
+mmap(NULL, 1837056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7f4ed8b36000
+mprotect(0x7f4ed8b58000, 1658880, PROT_NONE) = 0
+mmap(0x7f4ed8b58000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x22000) = 0x7f4ed8b58000
+mmap(0x7f4ed8ca0000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x16a000) = 0x7f4ed8ca0000
+mmap(0x7f4ed8ced000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1b6000) = 0x7f4ed8ced000
+mmap(0x7f4ed8cf3000, 14336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8cf3000
+close(8)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8b34000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8b31000
+arch_prctl(ARCH_SET_FS, 0x7f4ed8b31b40) = 0
+mprotect(0x7f4ed8ced000, 16384, PROT_READ) = 0
+mprotect(0x7f4ed8cfa000, 4096, PROT_READ) = 0
+mprotect(0x7f4ed8e7d000, 4096, PROT_READ) = 0
+mprotect(0x7f4ed8e9a000, 4096, PROT_READ) = 0
+mprotect(0x7f4ed8ea8000, 4096, PROT_READ) = 0
+mprotect(0x7f4ed8ec2000, 4096, PROT_READ) = 0
+mprotect(0x565473213000, 729088, PROT_READ) = 0
+mprotect(0x7f4ed8f0e000, 4096, PROT_READ) = 0
+munmap(0x7f4ed8ec6000, 131388)          = 0
+set_tid_address(0x7f4ed8b31e10)         = 24006
+set_robust_list(0x7f4ed8b31e20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f4ed8e856b0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f4ed8e91730}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f4ed8e85740, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4ed8e91730}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f4ed8b6d840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+brk(NULL)                               = 0x565474bf7000
+brk(0x565474c18000)                     = 0x565474c18000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 8
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(8, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(8, "56547258c000-565473014000 r-xp 0"..., 1024) = 1024
+read(8, "ed8cf1000-7f4ed8cf3000 rw-p 001b"..., 1024) = 1024
+read(8, "f4ed8e7d000-7f4ed8e7e000 r--p 00"..., 1024) = 1024
+read(8, "_64-linux-gnu/librt-2.28.so\n7f4e"..., 1024) = 1024
+read(8, "ib/x86_64-linux-gnu/ld-2.28.so\n7"..., 1024) = 745
+close(8)                                = 0
+sched_getaffinity(24006, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x565472b53aa0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f4ed8e91730}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x565472b53aa0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f4ed8e91730}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8ee4000
+mprotect(0x7f4ed8ee4000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7f4ed8ee5000, ss_flags=0, ss_size=8192}, NULL) = 0
+getcwd("/home/john/touchpoints", 512)   = 23
+readlink("/proc/self/exe", "/home/john/.cargo/bin/rustc", 256) = 27
+getcwd("/home/john/touchpoints", 512)   = 23
+futex(0x7f4ed8cfb0c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+statx(0, NULL, AT_STATX_SYNC_AS_STAT, STATX_ALL, NULL) = -1 EFAULT (Bad address)
+statx(AT_FDCWD, "/home/john/.cargo/bin/rustup-init", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffcf5bb1660) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/home/john/.terminfo", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffcf5bb0890) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/terminfo", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/etc/terminfo/s/screen-256color", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffcf5bb0890) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/etc/terminfo/73/screen-256color", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffcf5bb0890) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/lib/terminfo", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/lib/terminfo/s/screen-256color", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1737, ...}) = 0
+openat(AT_FDCWD, "/lib/terminfo/s/screen-256color", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\36\2+\0+\0\17\0i\1 \3screen-256color|GNU "..., 8192) = 1737
+getrandom("\x9f\x6f\xc2\x1f\x10\xe5\xfa\x1f\xd8\x2f\xb9\xed\x4f\x1c\xab\x05", 16, GRND_NONBLOCK) = 16
+close(8)                                = 0
+getcwd("/home/john/touchpoints", 512)   = 23
+statx(AT_FDCWD, "/home/john/.rustup", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+openat(AT_FDCWD, "/etc/rustup/settings.toml", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+statx(AT_FDCWD, "/home/john/.rustup/settings.toml", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=152, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/settings.toml", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=152, ...}) = 0
+read(8, "default_host_triple = \"x86_64-un"..., 153) = 152
+read(8, "", 1)                          = 0
+close(8)                                = 0
+brk(0x565474c43000)                     = 0x565474c43000
+mmap(NULL, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8b00000
+brk(0x565474c37000)                     = 0x565474c37000
+munmap(0x7f4ed8b00000, 200704)          = 0
+brk(0x565474c5c000)                     = 0x565474c5c000
+brk(0x565474c9b000)                     = 0x565474c9b000
+statx(AT_FDCWD, "/home/john/.rustup", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+getcwd("/home/john/touchpoints", 512)   = 23
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/rust-installer-version", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=1, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/rust-installer-version", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=1, ...}) = 0
+read(8, "3", 32)                        = 1
+read(8, "", 31)                         = 0
+close(8)                                = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-channel-manifest.toml", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=696269, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-channel-manifest.toml", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=696269, ...}) = 0
+mmap(NULL, 696320, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8a87000
+read(8, "date = \"2021-05-12\"\nmanifest-ver"..., 696270) = 696269
+read(8, "", 1)                          = 0
+close(8)                                = 0
+brk(0x565474cbc000)                     = 0x565474cbc000
+brk(0x565474cdd000)                     = 0x565474cdd000
+brk(0x565474cfe000)                     = 0x565474cfe000
+brk(0x565474d26000)                     = 0x565474d26000
+brk(0x565474d47000)                     = 0x565474d47000
+brk(0x565474d68000)                     = 0x565474d68000
+brk(0x565474da6000)                     = 0x565474da6000
+brk(0x565474dc7000)                     = 0x565474dc7000
+brk(0x565474de8000)                     = 0x565474de8000
+brk(0x565474e09000)                     = 0x565474e09000
+brk(0x565474e2a000)                     = 0x565474e2a000
+brk(0x565474e4b000)                     = 0x565474e4b000
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4ed8a46000
+brk(0x565474e6c000)                     = 0x565474e6c000
+brk(0x565474e8d000)                     = 0x565474e8d000
+brk(0x565474eae000)                     = 0x565474eae000
+brk(0x565474ecf000)                     = 0x565474ecf000
+brk(0x565474ef0000)                     = 0x565474ef0000
+brk(0x565474f11000)                     = 0x565474f11000
+brk(0x565474f32000)                     = 0x565474f32000
+brk(0x565474f53000)                     = 0x565474f53000
+brk(0x565474f74000)                     = 0x565474f74000
+brk(0x565474f95000)                     = 0x565474f95000
+brk(0x565474fb6000)                     = 0x565474fb6000
+brk(0x565474fd7000)                     = 0x565474fd7000
+mremap(0x7f4ed8a46000, 266240, 528384, MREMAP_MAYMOVE) = 0x7f4ed89c5000
+brk(0x565474ff8000)                     = 0x565474ff8000
+brk(0x565475019000)                     = 0x565475019000
+brk(0x56547503a000)                     = 0x56547503a000
+brk(0x56547505b000)                     = 0x56547505b000
+brk(0x56547507c000)                     = 0x56547507c000
+brk(0x56547509d000)                     = 0x56547509d000
+brk(0x5654750be000)                     = 0x5654750be000
+brk(0x5654750df000)                     = 0x5654750df000
+brk(0x565475100000)                     = 0x565475100000
+brk(0x565475121000)                     = 0x565475121000
+brk(0x565475142000)                     = 0x565475142000
+brk(0x565475164000)                     = 0x565475164000
+brk(0x565475191000)                     = 0x565475191000
+brk(0x5654751b2000)                     = 0x5654751b2000
+brk(0x5654751d3000)                     = 0x5654751d3000
+brk(0x5654751f4000)                     = 0x5654751f4000
+brk(0x565475215000)                     = 0x565475215000
+brk(0x565475236000)                     = 0x565475236000
+brk(0x565475257000)                     = 0x565475257000
+brk(0x565475278000)                     = 0x565475278000
+brk(0x565475299000)                     = 0x565475299000
+brk(0x5654752ba000)                     = 0x5654752ba000
+brk(0x5654752db000)                     = 0x5654752db000
+brk(0x5654752fc000)                     = 0x5654752fc000
+brk(0x56547531d000)                     = 0x56547531d000
+brk(0x56547533e000)                     = 0x56547533e000
+brk(0x56547535f000)                     = 0x56547535f000
+brk(0x565475380000)                     = 0x565475380000
+brk(0x5654753a1000)                     = 0x5654753a1000
+brk(0x5654753c3000)                     = 0x5654753c3000
+brk(0x5654753e4000)                     = 0x5654753e4000
+brk(0x565475405000)                     = 0x565475405000
+brk(0x565475426000)                     = 0x565475426000
+brk(0x565475447000)                     = 0x565475447000
+brk(0x565475468000)                     = 0x565475468000
+brk(0x565475489000)                     = 0x565475489000
+brk(0x5654754aa000)                     = 0x5654754aa000
+brk(0x5654754cb000)                     = 0x5654754cb000
+brk(0x5654754ec000)                     = 0x5654754ec000
+munmap(0x7f4ed89c5000, 528384)          = 0
+munmap(0x7f4ed8a87000, 696320)          = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/rust-installer-version", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=1, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/rust-installer-version", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=1, ...}) = 0
+read(8, "3", 32)                        = 1
+read(8, "", 31)                         = 0
+close(8)                                = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-channel-manifest.toml", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=696269, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-channel-manifest.toml", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=696269, ...}) = 0
+brk(0x5654755b5000)                     = 0x5654755b5000
+read(8, "date = \"2021-05-12\"\nmanifest-ver"..., 696270) = 696269
+read(8, "", 1)                          = 0
+close(8)                                = 0
+brk(0x565475635000)                     = 0x565475635000
+brk(0x565475656000)                     = 0x565475656000
+brk(0x565475677000)                     = 0x565475677000
+brk(0x565475698000)                     = 0x565475698000
+brk(0x5654756b9000)                     = 0x5654756b9000
+brk(0x5654756da000)                     = 0x5654756da000
+brk(0x5654756fb000)                     = 0x5654756fb000
+brk(0x56547571c000)                     = 0x56547571c000
+brk(0x56547573d000)                     = 0x56547573d000
+brk(0x56547575e000)                     = 0x56547575e000
+brk(0x56547577f000)                     = 0x56547577f000
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-config.toml", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=694, ...}) = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/multirust-config.toml", O_RDONLY|O_CLOEXEC) = 8
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0666, stx_size=694, ...}) = 0
+read(8, "config_version = \"1\"\n\n[[componen"..., 695) = 694
+read(8, "", 1)                          = 0
+close(8)                                = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustc", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=3654360, ...}) = 0
+getcwd("/home/john/touchpoints", 512)   = 23
+getcwd("/home/john/touchpoints", 512)   = 23
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f4ed8b6d840}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f4ed8b6d840}, 8) = 0
+execve("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustc", ["/home/john/.rustup/toolchains/ni"..., "--crate-name", "touchpoints", "--edition=2018", "src/main.rs", "--error-format=json", "--json=diagnostic-rendered-ansi", "--crate-type", "bin", "--emit=dep-info,link", "-C", "embed-bitcode=no", "-C", "debuginfo=2", "-C", "metadata=94e063f882d58e3e", "-C", "extra-filename=-94e063f882d58e3e", "--out-dir", "/home/john/touchpoints/target/de"..., "-C", "incremental=/home/john/touchpoin"..., "-L", "dependency=/home/john/touchpoint"..., "--extern", "nom=/home/john/touchpoints/targe"..., "--extern", "once_cell=/home/john/touchpoints"..., "--extern", "regex=/home/john/touchpoints/tar"..., "--extern", "thiserror=/home/john/touchpoints"...], 0x5654750c4240 /* 44 vars */) = 0
+brk(NULL)                               = 0x55cddf92c000
+readlink("/proc/self/exe", "/home/john/.rustup/toolchains/ni"..., 4096) = 72
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa910f58000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell/x86_64/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell/x86_64", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/haswell", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/x86_64/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/x86_64", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/tls", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell/x86_64/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell/x86_64", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/haswell", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/x86_64/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/x86_64", 0x7ffd14ac5e40) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-bcac88c1fda1187d.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\253E\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=98633072, ...}) = 0
+mmap(NULL, 59980992, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d624000
+mprotect(0x7fa910bbd000, 2097152, PROT_NONE) = 0
+mmap(0x7fa910dbd000, 1667072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3599000) = 0x7fa910dbd000
+mmap(0x7fa910f54000, 15552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa910f54000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libstd-c6dddd3d354e6bea.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\24\6\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=8058832, ...}) = 0
+mmap(NULL, 3650408, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d2a8000
+mprotect(0x7fa90d419000, 2093056, PROT_NONE) = 0
+mmap(0x7fa90d618000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x170000) = 0x7fa90d618000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/haswell", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/tls", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/haswell", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/haswell", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/tls", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/haswell", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps/x86_64", 0x7ffd14ac5e00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 8
+fstat(8, {st_mode=S_IFREG|0644, st_size=131388, ...}) = 0
+mmap(NULL, 131388, PROT_READ, MAP_PRIVATE, 8, 0) = 0x7fa90d287000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@l\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0755, st_size=146968, ...}) = 0
+mmap(NULL, 132288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d266000
+mmap(0x7fa90d26c000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x6000) = 0x7fa90d26c000
+mmap(0x7fa90d27b000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x15000) = 0x7fa90d27b000
+mmap(0x7fa90d281000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1a000) = 0x7fa90d281000
+mmap(0x7fa90d283000, 13504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa90d283000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260#\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=35808, ...}) = 0
+mmap(NULL, 39904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d25c000
+mmap(0x7fa90d25e000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7fa90d25e000
+mmap(0x7fa90d262000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x6000) = 0x7fa90d262000
+mmap(0x7fa90d264000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x7000) = 0x7fa90d264000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\21\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=14592, ...}) = 0
+mmap(NULL, 16656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d257000
+mmap(0x7fa90d258000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1000) = 0x7fa90d258000
+mmap(0x7fa90d259000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7fa90d259000
+mmap(0x7fa90d25a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0x7fa90d25a000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260A\2\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0755, st_size=1824496, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa90d255000
+mmap(NULL, 1837056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa90d094000
+mprotect(0x7fa90d0b6000, 1658880, PROT_NONE) = 0
+mmap(0x7fa90d0b6000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x22000) = 0x7fa90d0b6000
+mmap(0x7fa90d1fe000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x16a000) = 0x7fa90d1fe000
+mmap(0x7fa90d24b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1b6000) = 0x7fa90d24b000
+mmap(0x7fa90d251000, 14336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa90d251000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/haswell/x86_64/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/haswell/x86_64", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/haswell/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/haswell", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/x86_64/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/x86_64", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/tls", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/haswell/x86_64/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/haswell/x86_64", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/haswell/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/haswell", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/x86_64/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/x86_64", 0x7ffd14ac5d80) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-12-rust-1.54.0-nightly.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\306\361\1\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=101119528, ...}) = 0
+mmap(NULL, 85780529, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa907ec5000
+mmap(0x7fa909de1000, 48431104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1f1b000) = 0x7fa909de1000
+mmap(0x7fa90cc11000, 4202496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x4d4a000) = 0x7fa90cc11000
+mmap(0x7fa90d013000, 106496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x514b000) = 0x7fa90d013000
+mmap(0x7fa90d02d000, 419889, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa90d02d000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0203\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=100736, ...}) = 0
+mmap(NULL, 103496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa907eab000
+mmap(0x7fa907eae000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3000) = 0x7fa907eae000
+mmap(0x7fa907ebf000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x14000) = 0x7fa907ebf000
+mmap(0x7fa907ec3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x17000) = 0x7fa907ec3000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\322\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=1579448, ...}) = 0
+mmap(NULL, 1581384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa907d28000
+mmap(0x7fa907d35000, 651264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xd000) = 0x7fa907d35000
+mmap(0x7fa907dd4000, 872448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xac000) = 0x7fa907dd4000
+mmap(0x7fa907ea9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x180000) = 0x7fa907ea9000
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/haswell/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/haswell/x86_64", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/haswell/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/haswell", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/x86_64", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/tls", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/haswell/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/haswell/x86_64", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/haswell/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/haswell", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/x86_64", 0x7ffd14ac5d00) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/../lib", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0203\0\0\0\0\0\0"..., 832) = 832
+fstat(8, {st_mode=S_IFREG|0644, st_size=113088, ...}) = 0
+mmap(NULL, 115088, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 8, 0) = 0x7fa907d0b000
+mprotect(0x7fa907d0e000, 98304, PROT_NONE) = 0
+mmap(0x7fa907d0e000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3000) = 0x7fa907d0e000
+mmap(0x7fa907d1f000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x14000) = 0x7fa907d1f000
+mmap(0x7fa907d26000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1a000) = 0x7fa907d26000
+close(8)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa907d09000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa907d05000
+arch_prctl(ARCH_SET_FS, 0x7fa907d07500) = 0
+mprotect(0x7fa90d24b000, 16384, PROT_READ) = 0
+mprotect(0x7fa907d26000, 4096, PROT_READ) = 0
+mprotect(0x7fa907ea9000, 4096, PROT_READ) = 0
+mprotect(0x7fa907ec3000, 4096, PROT_READ) = 0
+mprotect(0x7fa90d281000, 4096, PROT_READ) = 0
+mprotect(0x7fa90d264000, 4096, PROT_READ) = 0
+mprotect(0x7fa90d25a000, 4096, PROT_READ) = 0
+mprotect(0x7fa90cc11000, 4202496, PROT_READ) = 0
+mprotect(0x7fa90d618000, 45056, PROT_READ) = 0
+mprotect(0x7fa910dbd000, 1646592, PROT_READ) = 0
+mprotect(0x55cdde55a000, 20480, PROT_READ) = 0
+mprotect(0x7fa910f81000, 4096, PROT_READ) = 0
+munmap(0x7fa90d287000, 131388)          = 0
+set_tid_address(0x7fa907d077d0)         = 24006
+set_robust_list(0x7fa907d077e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7fa90d26c6b0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fa90d278730}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7fa90d26c740, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fa90d278730}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlink("/etc/malloc.conf", 0x7ffd14ac5b30, 4096) = -1 ENOENT (No such file or directory)
+open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC) = 8
+read(8, "0", 1)                         = 1
+close(8)                                = 0
+open("/sys/kernel/mm/transparent_hugepage/enabled", O_RDONLY) = 8
+read(8, "[always] madvise never\n", 24) = 23
+close(8)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa90d2a7000
+madvise(0x7fa90d2a7000, 4096, MADV_FREE) = 0
+munmap(0x7fa90d2a7000, 4096)            = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa907b05000
+munmap(0x7fa907b05000, 2097152)         = 0
+mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa907906000
+munmap(0x7fa907906000, 1024000)         = 0
+munmap(0x7fa907c00000, 1069056)         = 0
+brk(NULL)                               = 0x55cddf92c000
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa907800000
+mmap(NULL, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fa907400000
+sched_getaffinity(24006, 128, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+futex(0x7fa90d02f610, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fa910f5426c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fa910f54278, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa90d0cb840}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x7fa90d34e0d0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fa90d278730}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x7fa90d34e0d0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fa90d278730}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa90d2a5000
+mprotect(0x7fa90d2a5000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7fa90d2a6000, ss_flags=0, ss_size=8192}, NULL) = 0
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 8
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(8, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(8, "55cdde2fd000-55cdde35a000 r-xp 0"..., 1024) = 1024
+read(8, "\n7fa907d26000-7fa907d27000 r--p "..., 1024) = 1024
+read(8, " 55089                      /lib"..., 1024) = 1024
+read(8, "0 \n7fa90d094000-7fa90d0b6000 r--"..., 1024) = 1024
+read(8, "so\n7fa90d25a000-7fa90d25b000 r--"..., 1024) = 1024
+read(8, " 00015000 08:10 226798          "..., 1024) = 1024
+read(8, "         /home/john/.rustup/tool"..., 1024) = 1024
+read(8, "           /lib/x86_64-linux-gnu"..., 1024) = 652
+close(8)                                = 0
+sched_getaffinity(24006, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa90d0cb840}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa90d0cb840}, 8) = 0
+openat(AT_FDCWD, "/proc/self/statm", O_RDONLY|O_CLOEXEC) = 8
+futex(0x7fa90d25b0c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+statx(0, NULL, AT_STATX_SYNC_AS_STAT, STATX_ALL, NULL) = -1 EFAULT (Bad address)
+statx(8, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_BASIC_STATS, stx_attributes=0, stx_mode=S_IFREG|0444, stx_size=0, ...}) = 0
+read(8, "40187 12440 9285 93 0 2780 0\n", 32) = 29
+read(8, "", 3)                          = 0
+close(8)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+fstat(8, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents64(8, /* 149 entries */, 32768) = 8136
+getdents64(8, /* 0 entries */, 32768)   = 0
+close(8)                                = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libnom-1db46996668bf13d.rlib", {st_mode=S_IFREG|0644, st_size=4718010, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libonce_cell-ae14c9fb41bfd017.rlib", {st_mode=S_IFREG|0644, st_size=391572, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libregex-77655542b95b7667.rlib", {st_mode=S_IFREG|0644, st_size=11680050, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/home/john/touchpoints/target/debug/deps/libthiserror-5d0fd23856d57062.rlib", {st_mode=S_IFREG|0644, st_size=82552, ...}) = 0
+readlink("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustc", 0x7fa9078b8300, 256) = -1 EINVAL (Invalid argument)
+readlink("/proc/self/exe", "/home/john/.rustup/toolchains/ni"..., 256) = 72
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu", {st_mode=S_IFDIR|0777, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rustc", {st_mode=S_IFREG|0755, st_size=3654360, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+statx(AT_FDCWD, "/home/john/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/lib.rs", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=22034, ...}) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fa906bff000
+mprotect(0x7fa906c00000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fa9073fd1f0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[24007], tls=0x7fa9073ff700, child_tidptr=0x7fa9073ff9d0) = 24007
+futex(0x7fa9073ff9d0, FUTEX_WAIT, 24007, NULL) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7fa90d2a5000, 12288)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

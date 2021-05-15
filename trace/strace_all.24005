@@ -1,0 +1,131 @@
+set_robust_list(0x7faed66a09e0, 24)     = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faed6c81000
+mprotect(0x7faed6c81000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7faed6c82000, ss_flags=0, ss_size=8192}, NULL) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7faec8000000
+munmap(0x7faecc000000, 67108864)        = 0
+mprotect(0x7faec8000000, 135168, PROT_READ|PROT_WRITE) = 0
+sched_getaffinity(24005, 32, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) = 32
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/invoked.timestamp", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 9
+write(9, "This file has an mtime of when t"..., 48) = 48
+close(9)                                = 0
+statx(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/invoked.timestamp", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=48, ...}) = 0
+openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC) = 9
+pipe2([10, 11], O_CLOEXEC)              = 0
+pipe2([12, 13], O_CLOEXEC)              = 0
+pipe2([14, 15], O_CLOEXEC)              = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7faed66a09d0) = 24006
+close(15)                               = 0
+read(14, "", 8)                         = 0
+close(14)                               = 0
+close(9)                                = 0
+close(11)                               = 0
+close(13)                               = 0
+fcntl(10, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+fcntl(12, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"unused imports: `bra", 32) = 32
+read(12, "nch::alt`, `tag`, `take_till1`\",", 32) = 32
+read(12, "\"code\":{\"code\":\"unused_imports\","..., 64) = 64
+read(12, "ning\",\"spans\":[{\"file_name\":\"src"..., 128) = 128
+read(12, "n_end\":16,\"is_primary\":true,\"tex"..., 256) = 256
+read(12, "0,\"line_start\":3,\"line_end\":3,\"c"..., 512) = 512
+read(12, "tag, take_till, take_till1, take"..., 1024) = 1024
+read(12, ", is_not, tag, take_till, take_t"..., 2048) = 1876
+read(12, 0x7faec8006d54, 172)           = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d59130898, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x563d5920f060, FUTEX_WAKE_PRIVATE, 1) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/output-bin-touchpoints", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 9
+write(9, "{\"message\":\"unused imports: `bra"..., 3923) = 3923
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"unused variable: `ln"..., 4096) = 2063
+read(12, 0x7faec800660f, 2033)          = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d5913089c, FUTEX_WAKE_PRIVATE, 1) = 1
+write(9, "{\"message\":\"unused variable: `ln"..., 2062) = 2062
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"function is never us"..., 4096) = 1490
+read(12, 0x7faec80063d2, 2606)          = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d59130898, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x563d5920f060, FUTEX_WAKE_PRIVATE, 1) = 0
+write(9, "{\"message\":\"function is never us"..., 1489) = 1489
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"function is never us"..., 4096) = 1159
+read(12, 0x7faec8006287, 2937)          = -1 EAGAIN (Resource temporarily unavailable)
+write(9, "{\"message\":\"function is never us"..., 1158) = 1158
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"unused `Result` that"..., 4096) = 1740
+read(12, 0x7faec80064cc, 2356)          = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d5913089c, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x563d5920f060, FUTEX_WAKE_PRIVATE, 1) = 0
+write(9, "{\"message\":\"unused `Result` that"..., 1739) = 1739
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 1 ([{fd=12, revents=POLLIN}])
+read(12, "{\"message\":\"5 warnings emitted\","..., 4096) = 197
+read(12, 0x7faec8005ec5, 3899)          = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x563d59130898, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x563d5920f060, FUTEX_WAKE_PRIVATE, 1) = 0
+write(9, "{\"message\":\"5 warnings emitted\","..., 196) = 196
+write(9, "\n", 1)                       = 1
+poll([{fd=10, events=POLLIN}, {fd=12, events=POLLIN}], 2, -1) = 2 ([{fd=10, revents=POLLHUP}, {fd=12, revents=POLLHUP}])
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=24006, si_uid=1000, si_status=0, si_utime=15, si_stime=18} ---
+read(12, "", 4096)                      = 0
+read(10, "", 32)                        = 0
+close(12)                               = 0
+close(10)                               = 0
+wait4(24006, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 24006
+statx(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.d", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=235, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e.d", O_RDONLY|O_CLOEXEC) = 10
+statx(10, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=235, ...}) = 0
+read(10, "/home/john/touchpoints/target/de"..., 236) = 235
+read(10, "", 1)                         = 0
+close(10)                               = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/target", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/src/main.rs", {st_mode=S_IFREG|0644, st_size=4320, ...}) = 0
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/john/touchpoints/src/nom_parse.rs", {st_mode=S_IFREG|0644, st_size=1560, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/dep-bin-touchpoints", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 10
+write(10, "\2\0\0\0\0\v\0\0\0src/main.rs\0\20\0\0\0src/nom"..., 45) = 45
+close(10)                               = 0
+utimensat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/dep-bin-touchpoints", [{tv_sec=1621063503, tv_nsec=160000000} /* 2021-05-15T03:25:03.160000000-0400 */, {tv_sec=1621063503, tv_nsec=160000000} /* 2021-05-15T03:25:03.160000000-0400 */], 0) = 0
+close(9)                                = 0
+statx(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=14995072, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", O_RDONLY|O_CLOEXEC) = 9
+statx(9, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=14995072, ...}) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/touchpoints", O_RDONLY|O_CLOEXEC) = 10
+statx(10, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=14995072, ...}) = 0
+close(10)                               = 0
+close(9)                                = 0
+statx(AT_FDCWD, "/home/john/touchpoints/target/debug/touchpoints", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=14995072, ...}) = 0
+unlink("/home/john/touchpoints/target/debug/touchpoints") = 0
+statx(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=14995072, ...}) = 0
+linkat(AT_FDCWD, "/home/john/touchpoints/target/debug/deps/touchpoints-94e063f882d58e3e", AT_FDCWD, "/home/john/touchpoints/target/debug/touchpoints", 0) = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/bin-touchpoints", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 9
+write(9, "ee89ea18aadd4fc5", 16)        = 16
+close(9)                                = 0
+openat(AT_FDCWD, "/home/john/touchpoints/target/debug/.fingerprint/touchpoints-94e063f882d58e3e/bin-touchpoints.json", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 9
+write(9, "{\"rustc\":4956240172090547816,\"fe"..., 556) = 556
+close(9)                                = 0
+futex(0x563d5913089c, FUTEX_WAKE_PRIVATE, 1) = 1
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7faed6c81000, 12288)           = 0
+madvise(0x7faed64a0000, 2076672, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++
