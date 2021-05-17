@@ -1,6 +1,7 @@
 use std::{
     collections::{HashMap, HashSet},
     num::ParseIntError,
+    path::Path,
 };
 
 use once_cell::sync::Lazy;
@@ -48,7 +49,7 @@ struct Eventer<'a> {
 }
 
 #[derive(Debug)]
-enum FDInfo<'a> {
+pub enum FDInfo<'a> {
     File { name: &'a str, flags: &'a str },
     Pipe { flags: &'a str },
     Socket,
@@ -56,11 +57,16 @@ enum FDInfo<'a> {
 }
 
 impl<'a> FDInfo<'a> {
-    const STDIN: Self = Self::new_file("(stdin)", "O_RDONLY");
-    const STDOUT: Self = Self::new_file("(stdout)", "O_RDWR");
-    const STDERR: Self = Self::new_file("(stderr)", "O_RDWR");
+    const STDIN: Self = Self::new_file_const("(stdin)", "O_RDONLY");
+    const STDOUT: Self = Self::new_file_const("(stdout)", "O_RDWR");
+    const STDERR: Self = Self::new_file_const("(stderr)", "O_RDWR");
 
-    const fn new_file(name: &'a str, flags: &'a str) -> Self {
+    const fn new_file_const(name: &'a str, flags: &'a str) -> Self {
+        FDInfo::File { name, flags }
+    }
+
+    fn new_file(name: &'a str, flags: &'a str) -> Self {
+        let name = name.trim_matches('"');
         FDInfo::File { name, flags }
     }
 
@@ -190,6 +196,10 @@ impl<'a> Eventer<'a> {
     fn new_fd(&mut self, id: usize, info: FDInfo<'a>) -> Result<(), ProcessError> {
         //println!("Opening new fd {}: {:?}", id, name);
         println!("OPEN    {}", info.name());
+
+        if let FDInfo::File { name, .. } = info {
+            self.seen_files.insert(name);
+        }
         match self.open_fds.insert(id, info) {
             Some(_) => Err(ProcessError::OverwriteFD(id)),
             None => Ok(()),
@@ -215,8 +225,8 @@ impl<'a> Eventer<'a> {
 
         match etype {
             EventType::Read => {
-                //println!("Reading from {:?}", &info);
                 println!("READ    {}", info.name());
+                //println!("Reading from {:?}", &info);
             }
             EventType::Write => {
                 println!("WRITE   {}", info.name());
@@ -262,6 +272,13 @@ fn main() {
     }
 
     dbg!(&eventer.syscalls);
+    dbg!(
+        &eventer
+            .seen_files
+            .iter()
+            .map(|p| Path::new(p).canonicalize().unwrap())
+            .collect::<Vec<_>>()
+    );
 }
 
 // strace -f -e trace=!write cargo build
