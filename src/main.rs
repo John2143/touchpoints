@@ -1,7 +1,7 @@
 use std::{
     collections::{HashMap, HashSet},
     num::ParseIntError,
-    path::Path,
+    path::{Path, PathBuf},
 };
 
 use once_cell::sync::Lazy;
@@ -45,34 +45,33 @@ fn parse_into_event<'a>(input: &'a str) -> Result<StraceEvent<'a>, ()> {
 struct Eventer<'a> {
     syscalls: HashSet<&'a str>,
     open_fds: HashMap<usize, FDInfo<'a>>,
-    seen_files: HashSet<&'a str>,
+    closed_fds: Vec<FDInfo<'a>>,
 }
 
 #[derive(Debug)]
 pub enum FDInfo<'a> {
-    File { name: &'a str, flags: &'a str },
+    File { path_buf: PathBuf, flags: &'a str },
+    Stdio { name: &'a str },
     Pipe { flags: &'a str },
     Socket,
     Other,
 }
 
 impl<'a> FDInfo<'a> {
-    const STDIN: Self = Self::new_file_const("(stdin)", "O_RDONLY");
-    const STDOUT: Self = Self::new_file_const("(stdout)", "O_RDWR");
-    const STDERR: Self = Self::new_file_const("(stderr)", "O_RDWR");
-
-    const fn new_file_const(name: &'a str, flags: &'a str) -> Self {
-        FDInfo::File { name, flags }
-    }
+    const STDIN: Self = Self::Stdio { name: "stdin" };
+    const STDOUT: Self = Self::Stdio { name: "stdout" };
+    const STDERR: Self = Self::Stdio { name: "stderr" };
 
     fn new_file(name: &'a str, flags: &'a str) -> Self {
         let name = name.trim_matches('"');
-        FDInfo::File { name, flags }
+        let path_buf = Path::new(&name).canonicalize().unwrap();
+        FDInfo::File { path_buf, flags }
     }
 
-    fn name(&self) -> &'a str {
+    fn name(&'a self) -> &'a str {
         match self {
-            Self::File { name, .. } => name,
+            Self::File { path_buf, .. } => path_buf.as_os_str().to_str().unwrap(),
+            Self::Stdio { name } => name,
             Self::Pipe { .. } => "(pipe)",
             Self::Socket => "(socket)",
             Self::Other => "(unknown)",
@@ -117,7 +116,7 @@ impl<'a> Eventer<'a> {
             open_fds: vec![(0, FDInfo::STDIN), (1, FDInfo::STDOUT), (2, FDInfo::STDERR)]
                 .into_iter()
                 .collect(),
-            seen_files: Default::default(),
+            closed_fds: Default::default(),
         }
     }
 
@@ -197,11 +196,11 @@ impl<'a> Eventer<'a> {
         //println!("Opening new fd {}: {:?}", id, name);
         println!("OPEN    {}", info.name());
 
-        if let FDInfo::File { name, .. } = info {
-            self.seen_files.insert(name);
-        }
         match self.open_fds.insert(id, info) {
-            Some(_) => Err(ProcessError::OverwriteFD(id)),
+            Some(file) => {
+                self.closed_fds.push(file);
+                Err(ProcessError::OverwriteFD(id))
+            }
             None => Ok(()),
         }
     }
@@ -211,6 +210,7 @@ impl<'a> Eventer<'a> {
             Some(file) => {
                 //println!("Closing fd {}: {}", id, file.name);
                 println!("CLOSE   {}", file.name());
+                self.closed_fds.push(file);
                 Ok(())
             }
             None => Err(ProcessError::UseEmptyFD(id)),
@@ -235,6 +235,16 @@ impl<'a> Eventer<'a> {
         };
 
         Ok(())
+    }
+
+    fn close_all_fds(&mut self) {
+        for (_, v) in self.open_fds.drain() {
+            self.closed_fds.push(v);
+        }
+    }
+
+    fn print_tree(&self) {
+        dbg!(&self.closed_fds);
     }
 }
 
@@ -271,14 +281,8 @@ fn main() {
         }
     }
 
-    dbg!(&eventer.syscalls);
-    dbg!(
-        &eventer
-            .seen_files
-            .iter()
-            .map(|p| Path::new(p).canonicalize().unwrap())
-            .collect::<Vec<_>>()
-    );
+    eventer.close_all_fds();
+    eventer.print_tree();
 }
 
 // strace -f -e trace=!write cargo build
