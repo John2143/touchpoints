@@ -9,6 +9,8 @@ use regex::Regex;
 
 mod nom_parse;
 
+mod file_tree;
+
 #[derive(Debug)]
 pub struct StraceEvent<'a> {
     syscall: &'a str,
@@ -80,6 +82,8 @@ impl<'a> FDInfo<'a> {
 }
 
 use thiserror::Error;
+
+use crate::file_tree::FileTree;
 #[derive(Error, Debug)]
 pub enum ProcessError {
     #[error("Failed to parse result {0}")]
@@ -243,8 +247,13 @@ impl<'a> Eventer<'a> {
         }
     }
 
-    fn print_tree(&self) {
-        dbg!(&self.closed_fds);
+    fn print_tree(&mut self) {
+        println!("{:?}", self.closed_fds);
+        let ft = FileTree::new(self.closed_fds.drain(..));
+
+        ft.print();
+
+        //println!("{:?}", ft);
     }
 }
 
