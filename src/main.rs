@@ -1,7 +1,9 @@
 use std::{
     collections::{HashMap, HashSet},
+    io::Write,
     num::ParseIntError,
     path::{Path, PathBuf},
+    str::FromStr,
 };
 
 use once_cell::sync::Lazy;
@@ -66,7 +68,11 @@ impl<'a> FDInfo<'a> {
 
     fn new_file(name: &'a str, flags: &'a str) -> Self {
         let name = name.trim_matches('"');
-        let path_buf = Path::new(&name).canonicalize().unwrap();
+        println!("{}", name);
+        let path_buf = match Path::new(&name).canonicalize() {
+            Ok(p) => p,
+            Err(_) => PathBuf::from_str(name).unwrap(),
+        };
         FDInfo::File { path_buf, flags }
     }
 
@@ -229,11 +235,11 @@ impl<'a> Eventer<'a> {
 
         match etype {
             EventType::Read => {
-                println!("READ    {}", info.name());
+                //println!("READ    {}", info.name());
                 //println!("Reading from {:?}", &info);
             }
             EventType::Write => {
-                println!("WRITE   {}", info.name());
+                //println!("WRITE   {}", info.name());
                 //println!("Writing to {:?}", &info);
             }
         };
@@ -248,7 +254,9 @@ impl<'a> Eventer<'a> {
     }
 
     fn print_tree(&mut self) {
-        println!("{:?}", self.closed_fds);
+        //println!("{:?}", self.closed_fds);
+        println!("Begin constructing tree");
+        std::io::stdout().flush().unwrap();
         let ft = FileTree::new(self.closed_fds.drain(..));
 
         ft.print();
@@ -290,7 +298,9 @@ fn main() {
         }
     }
 
+    println!("closing FDs");
     eventer.close_all_fds();
+    println!("print tree");
     eventer.print_tree();
 }
 

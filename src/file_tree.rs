@@ -1,4 +1,8 @@
-use std::{collections::HashMap, ffi::OsString, str::FromStr};
+use std::{
+    collections::HashMap,
+    ffi::{OsStr, OsString},
+    str::FromStr,
+};
 
 //use bumpalo::{boxed::Box as BBox, Bump};
 
@@ -91,14 +95,16 @@ impl FileTree {
             _ => return,
         };
 
-        if path_buf.is_dir() {
-            panic!("no idea what to do on dir syscall");
-        }
-
         let iter: Vec<_> = path_buf.iter().skip(1).collect();
-        let (filename, iter) = iter
-            .split_last()
-            .expect("path did not have at least a filename");
+        let wd = OsStr::new(".");
+
+        let (filename, iter) = if path_buf.is_dir() {
+            (&wd, iter.as_slice())
+        } else {
+            iter.split_last()
+                .expect("path did not have at least a filename")
+        };
+
 
         let mut cwd = &mut self.root;
 
