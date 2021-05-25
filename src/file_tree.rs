@@ -3,6 +3,9 @@ use std::{
     str::FromStr,
 };
 
+use hashbrown::HashMap;
+use tracing::trace;
+
 //use bumpalo::{boxed::Box as BBox, Bump};
 
 #[derive(Debug, PartialEq, Eq)]
@@ -45,9 +48,7 @@ impl Node {
 
     fn print(&self, indent: usize) {
         match self {
-            Self::File(perms) => {
-                //println!("{}{:?}", spaces(indent), perms);
-            }
+            Self::File(_) => {}
             Self::Dir(dir) => dir.print(indent + 1),
         }
     }
@@ -136,26 +137,23 @@ impl FileTree {
             }
             cwd.contained_files += 1;
 
-            //Ideally, we'd delay allocation of the key until it is needed.
-            //This requires the raw_entry api.
-            //
-            //#![feature(hash_raw_entry)]
-            //
-            // > Raw entries are useful for such exotic situations as:
-            // > - ...
-            // > - Deferring the creation of an owned key until it is known to be required
-            // > - ...
-            //
-            // ideal(ish) code below:
-            //
-            // let empty = || (p.to_os_string(), Node::Dir(Box::new(Default::default())));
-            // let (_, val) = cwd.items.raw_entry_mut().from_key(*p).or_insert_with(empty);
-            // cwd = val.dir();
-            cwd = cwd
+            let empty = || {
+                (
+                    folder.to_os_string(),
+                    Node::Dir(Box::new(Default::default())),
+                )
+            };
+
+            let (key, val) = cwd
                 .items
-                .entry(folder.to_os_string())
-                .or_insert(Node::Dir(Box::new(Default::default())))
-                .dir();
+                .raw_entry_mut()
+                .from_key(folder)
+                .or_insert_with(empty);
+
+
+            trace!("key is {:?}", key);
+
+            cwd = val.dir();
         }
 
         //Finally, insert file

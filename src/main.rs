@@ -1,11 +1,12 @@
 //#![feature(hash_raw_entry)]
 use std::{
-    collections::{HashMap, HashSet},
     io::Write,
     num::ParseIntError,
     path::{Path, PathBuf},
     str::FromStr,
 };
+
+use hashbrown::{HashMap, HashSet};
 
 use once_cell::sync::Lazy;
 use regex::Regex;
@@ -69,7 +70,7 @@ impl<'a> FDInfo<'a> {
 
     fn new_file(name: &'a str, flags: &'a str) -> Self {
         let name = name.trim_matches('"');
-        println!("{}", name);
+        tracing::debug!("Creating node with {}", name);
         let path_buf = match Path::new(&name).canonicalize() {
             Ok(p) => p,
             Err(_) => PathBuf::from_str(name).unwrap(),
@@ -89,6 +90,7 @@ impl<'a> FDInfo<'a> {
 }
 
 use thiserror::Error;
+use tracing::{error, info, trace};
 
 use crate::file_tree::FileTree;
 #[derive(Error, Debug)]
@@ -204,8 +206,7 @@ impl<'a> Eventer<'a> {
     }
 
     fn new_fd(&mut self, id: usize, info: FDInfo<'a>) -> Result<(), ProcessError> {
-        //println!("Opening new fd {}: {:?}", id, name);
-        println!("OPEN    {}", info.name());
+        trace!("OPEN    {}", info.name());
 
         match self.open_fds.insert(id, info) {
             Some(file) => {
@@ -219,8 +220,7 @@ impl<'a> Eventer<'a> {
     fn close_fd(&mut self, id: usize) -> Result<(), ProcessError> {
         match self.open_fds.remove(&id) {
             Some(file) => {
-                //println!("Closing fd {}: {}", id, file.name);
-                println!("CLOSE   {}", file.name());
+                trace!("CLOSE   {}", file.name());
                 self.closed_fds.push(file);
                 Ok(())
             }
@@ -236,12 +236,10 @@ impl<'a> Eventer<'a> {
 
         match etype {
             EventType::Read => {
-                //println!("READ    {}", info.name());
-                //println!("Reading from {:?}", &info);
+                trace!("READ    {}", info.name());
             }
             EventType::Write => {
-                //println!("WRITE   {}", info.name());
-                //println!("Writing to {:?}", &info);
+                trace!("WRITE   {}", info.name());
             }
         };
 
@@ -256,7 +254,7 @@ impl<'a> Eventer<'a> {
 
     fn print_tree(&mut self) {
         //println!("{:?}", self.closed_fds);
-        println!("Begin constructing tree");
+        info!("Begin constructing tree");
         std::io::stdout().flush().unwrap();
         let ft = FileTree::new(self.closed_fds.drain(..));
 
@@ -272,6 +270,8 @@ fn main() {
         println!("Not enough args. usage `cargo run [file]`");
     }
     let file = args.nth(1).expect("No input file given");
+
+    tracing_subscriber::fmt::init();
 
     let file = std::fs::read_to_string(file).expect("couldn't open strace file");
 
@@ -294,14 +294,14 @@ fn main() {
         match eventer.process(e) {
             Ok(_) => {}
             Err(err) => {
-                println!("got eventer error on line {}: {}", lnnum + 1, err);
+                error!("got eventer error on line {}: {}", lnnum + 1, err);
             }
         }
     }
 
-    println!("closing FDs");
+    info!("closing FDs");
     eventer.close_all_fds();
-    println!("print tree");
+    info!("print tree");
     eventer.print_tree();
 }
 
