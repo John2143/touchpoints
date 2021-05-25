@@ -6,10 +6,16 @@ use std::{
 
 //use bumpalo::{boxed::Box as BBox, Bump};
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Eq)]
 pub enum Perms {
     Read,
     Write,
+}
+
+impl Default for Perms {
+    fn default() -> Self {
+        Self::Read
+    }
 }
 
 #[derive(Debug)]
@@ -21,6 +27,8 @@ pub enum Node {
 #[derive(Default, Debug)]
 pub struct Directory {
     items: HashMap<OsString, Node>,
+    stain: Perms,
+    files_stain: usize,
 }
 
 #[derive(Default, Debug)]
@@ -68,7 +76,12 @@ impl FromStr for Perms {
 impl Directory {
     fn print(&self, indent: usize) {
         for (key, value) in self.items.iter() {
-            println!("{}{:?}", spaces(indent), key);
+            println!(
+                "{}{} {:?}",
+                spaces(indent),
+                key.to_string_lossy(),
+                self.stain
+            );
             value.print(indent + 1)
         }
     }
@@ -95,6 +108,8 @@ impl FileTree {
             _ => return,
         };
 
+        let flags: Perms = flags.parse().unwrap();
+
         let iter: Vec<_> = path_buf.iter().skip(1).collect();
         let wd = OsStr::new(".");
 
@@ -109,6 +124,10 @@ impl FileTree {
         let mut cwd = &mut self.root;
 
         for p in iter {
+            if flags == Perms::Write {
+                cwd.stain = Perms::Write;
+            }
+            cwd.files_stain += 1;
             cwd = cwd
                 .items
                 .entry(p.to_os_string())
@@ -116,7 +135,6 @@ impl FileTree {
                 .dir();
         }
 
-        cwd.items
-            .insert(filename.to_os_string(), Node::File(flags.parse().unwrap()));
+        cwd.items.insert(filename.to_os_string(), Node::File(flags));
     }
 }
