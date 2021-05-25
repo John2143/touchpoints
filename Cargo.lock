@@ -376,6 +376,7 @@ dependencies = [
 name = "touchpoints"
 version = "0.1.0"
 dependencies = [
+ "ansi_term",
  "bumpalo",
  "hashbrown",
  "itertools",

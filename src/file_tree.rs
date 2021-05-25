@@ -4,11 +4,11 @@ use std::{
 };
 
 use hashbrown::HashMap;
-use tracing::trace;
+use tracing::{info, trace};
 
 //use bumpalo::{boxed::Box as BBox, Bump};
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum Perms {
     Read,
     Write,
@@ -41,9 +41,21 @@ pub struct FileTree {
 impl Node {
     fn dir(&mut self) -> &mut Directory {
         match self {
+            //expected path: we are already a dir
             Self::Dir(ref mut n) => n,
-            Self::File(_) => panic!("inode which was previously a directory is now a file"),
+            Self::File(f) => {
+                let f = f.clone();
+                info!("inode which was previously a directory is now a file");
+                let mut new_dir = Directory::default();
+                new_dir.items.insert(OsString::from("."), Node::File(f));
+                *self = Self::Dir(Box::new(new_dir));
+                self.dir()
+            }
         }
+    }
+
+    fn empty_dir() -> Self {
+        Self::Dir(Default::default())
     }
 
     fn print(&self, indent: usize) {
@@ -57,6 +69,15 @@ impl Node {
 fn spaces(n: usize) -> &'static str {
     let spaces = "                                               ";
     &spaces[..n]
+}
+
+impl Perms {
+    fn color(&self) -> ansi_term::Colour {
+        match self {
+            Self::Write => ansi_term::Colour::Red,
+            Self::Read => ansi_term::Color::Blue,
+        }
+    }
 }
 
 impl FromStr for Perms {
@@ -76,19 +97,17 @@ impl FromStr for Perms {
 impl Directory {
     fn print(&self, indent: usize) {
         for (key, value) in self.items.iter() {
+            let key_string = key.to_string_lossy();
             match value {
                 Node::Dir(d) => {
-                    println!(
-                        "{}{} {:?} {}",
-                        spaces(indent),
-                        key.to_string_lossy(),
-                        d.stain,
-                        d.contained_files,
-                    );
+                    info!("{} {:?} {}", key_string, d.stain, d.contained_files);
+                    println!("{}{}", spaces(indent), d.stain.color().paint(key_string),);
+
                     value.print(indent + 1)
                 }
                 Node::File(perms) => {
-                    println!("{}{} {:?}", spaces(indent), key.to_string_lossy(), perms);
+                    info!("{:?} {:?}", key_string, perms);
+                    println!("{}{}", spaces(indent), perms.color().paint(key_string));
                 }
             }
         }
@@ -137,12 +156,7 @@ impl FileTree {
             }
             cwd.contained_files += 1;
 
-            let empty = || {
-                (
-                    folder.to_os_string(),
-                    Node::Dir(Box::new(Default::default())),
-                )
-            };
+            let empty = || (folder.to_os_string(), Node::empty_dir());
 
             let (key, val) = cwd
                 .items
@@ -151,9 +165,19 @@ impl FileTree {
                 .or_insert_with(empty);
 
 
-            trace!("key is {:?}", key);
+            trace!("key is {:?} + {:?}", key, next);
 
             cwd = val.dir();
+
+            //match val {
+            ////expected path: we inserted a dir or we are partway done parsing
+            //Node::Dir(d) => {
+            //cwd = &mut *d;
+            //continue;
+            //}
+            ////rare path: caused when stating directories or something
+            //Node::File(f) => f,
+            //};
         }
 
         //Finally, insert file

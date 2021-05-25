@@ -70,11 +70,13 @@ impl<'a> FDInfo<'a> {
 
     fn new_file(name: &'a str, flags: &'a str) -> Self {
         let name = name.trim_matches('"');
+        let is_dir = name.ends_with("/");
         tracing::debug!("Creating node with {}", name);
-        let path_buf = match Path::new(&name).canonicalize() {
+        let mut path_buf = match Path::new(&name).canonicalize() {
             Ok(p) => p,
             Err(_) => PathBuf::from_str(name).unwrap(),
         };
+
         FDInfo::File { path_buf, flags }
     }
 
@@ -90,7 +92,7 @@ impl<'a> FDInfo<'a> {
 }
 
 use thiserror::Error;
-use tracing::{error, info, trace};
+use tracing::{debug, error, info, trace};
 
 use crate::file_tree::FileTree;
 #[derive(Error, Debug)]
@@ -294,7 +296,7 @@ fn main() {
         match eventer.process(e) {
             Ok(_) => {}
             Err(err) => {
-                error!("got eventer error on line {}: {}", lnnum + 1, err);
+                debug!("got eventer error on line {}: {}", lnnum + 1, err);
             }
         }
     }
