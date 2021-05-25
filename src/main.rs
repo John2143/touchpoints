@@ -1,3 +1,4 @@
+//#![feature(hash_raw_entry)]
 use std::{
     collections::{HashMap, HashSet},
     io::Write,
@@ -55,7 +56,7 @@ struct Eventer<'a> {
 #[derive(Debug)]
 pub enum FDInfo<'a> {
     File { path_buf: PathBuf, flags: &'a str },
-    Stdio { name: &'a str },
+    Stdio { name: &'static str },
     Pipe { flags: &'a str },
     Socket,
     Other,
@@ -270,7 +271,7 @@ fn main() {
     if args.len() < 1 {
         println!("Not enough args. usage `cargo run [file]`");
     }
-    let file = args.nth(1).unwrap();
+    let file = args.nth(1).expect("No input file given");
 
     let file = std::fs::read_to_string(file).expect("couldn't open strace file");
 
